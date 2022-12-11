@@ -1,0 +1,131 @@
+@import  "../../Style/Common/variables";
+@import "../../Style/Common/mixin";
+
+header{
+   background:  $primary-brand 0% 0% no-repeat padding-box;
+   border-bottom: 1px solid $gray-m1;
+   position: sticky;
+   top:0;
+   max-width: 100%;
+   margin: 0 auto;
+   z-index: 999;
+a{
+    @include font-two;
+    color: $white;
+}
+nav{
+    padding: 16px 0;
+
+    .mobile_menu{
+        display:none;
+    
+        img{
+            width: 18px;
+            height: 12px;
+            
+        }
+    }
+    .logo{ 
+       
+        img{ 
+            max-width:7rem;
+            max-height: 3rem;
+            object-fit:cover;
+            vertical-align: middle;
+        }
+       
+       
+        
+    }
+    .main_menus{
+        ul{   
+            display: flex;
+            justify-content: center;
+            
+           
+           li{
+            &:not(:last-child){
+                padding-right: 32px;
+              
+             } 
+             .active{
+                border-bottom: 4px solid $primary-l1;
+                padding-bottom: 0.7rem;
+            }
+             span{
+                
+                text-align: right;
+                @include font-two;
+                color: $white;
+                &:hover{
+                    color: $main_black;
+                    font-weight: bold;
+                    transition: .5s;
+                }
+            }
+           }
+            
+     }
+    }
+    .right_nav{
+ 
+        ul{     
+            text-align: right;
+        
+          li{
+            padding-right: 16px;
+            img{
+                width:22px;
+                height:24px;
+                background: transparent 0% 0% no-repeat padding-box;
+                padding: 2px;
+            }
+          }
+          .add-cart {
+            position: relative;
+            padding: 16px 0;
+            top: 16px;
+            img{
+                position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					-webkit-transform: translate(-50%, -50%);
+					-moz-transform: translate(-50%, -50%);
+					-ms-transform: translate(-50%, -50%);
+					-o-transform: translate(-50%, -50%);
+            }
+            .cart_counter{
+            
+                position: absolute;
+					top: -20px;
+					right: -20px;
+					width: 22px;
+					height: 22px;
+                    font-size: 12px;
+					text-align: center;
+					vertical-align: middle;
+                    color:$white;
+                    background: $primary-m1;
+					border-radius: 50%;
+					-webkit-text-stroke-width: thick;
+                &:hover, 
+                &:focus {
+                animation: pulse 1s;
+                box-shadow: 0 0 0 2em rgba($white,0);
+                }
+    
+                @keyframes pulse {
+                0% { box-shadow: 0 0 0 0 $white; 
+                }
+                }
+              }}
+         
+        } 
+       
+       
+       
+     }
+}
+
+}

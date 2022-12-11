@@ -1,0 +1,30 @@
+.signIn_summary{
+    padding: 24px 32px;
+    border: 1px solid $border-color;
+    border-radius: 2px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .signIn_heading{
+        flex-basis: 60%;
+        h3{
+            @include mainFont($font-size-20, $line-spacing-25, $font-family-muli, $font-weight-600);
+            color: $color-172026;
+            max-width: 100%;
+        }
+    }
+  
+    .signIn_action{
+        flex-basis: 40%;
+    
+        .signIn_button{
+            padding: 11px 30px 11px 33px;
+            text-transform: uppercase;
+            background: $white 0% 0% no-repeat padding-box;
+            border: 2px solid $primary-l2;
+            color: $primary-l2;
+        }
+    }
+   
+} 

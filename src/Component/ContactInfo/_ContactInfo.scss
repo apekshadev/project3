@@ -1,0 +1,42 @@
+.contact_info{
+    padding: 0 0 40px 0;
+    .leftInputBox{
+        padding-right: 16px;
+       }
+       .rightInputBox{
+        padding-left: 16px;
+       }
+    h3{
+
+        @include mainFont($font-size-20, $line-spacing-25, $font-family-muli, $font-weight-600);
+        color:$color-172026;
+    }
+    p{
+        padding-top: 8px;
+     
+        @include mainFont($font-size-16, $line-spacing-25, $font-family-muli, $font-style-normal);
+        color:$color-172026;
+    }
+    form{
+        padding-top: 16px;
+        label{
+            padding: 16px 0 8px 0;
+            @include mainFont($font-size-16, $line-spacing-24, $font-family-muli, $font-weight-600);
+            color:$black-l2;
+        }
+        input{
+          
+            @include mainFont($font-size-16, $line-spacing-19, $font-family-muli, $font-style-normal);
+            color: $gray-m1;
+             width: 100%;
+            padding: 11px 0 13px 12px;
+            background: $white 0% 0% no-repeat padding-box;
+            border: 2px solid $gray-l2;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        
+        }
+    }
+   
+   
+}

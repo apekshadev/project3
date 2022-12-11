@@ -1,0 +1,49 @@
+
+
+.main_banner{
+    
+ 
+    .leftside_banner{
+        background-color:$black;
+        color:$white ;
+        height: 352px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+
+  
+    h1 {
+        // &::first-letter {
+        //     text-transform:capitalize;
+        // }
+        @include mainFont($font-size-48, $line-spacing-60, $font-family-source-serif-pro, $font-weight-600);
+            }
+        h2.hide_head {
+            display: none;
+       
+         }
+
+    
+    
+    
+    .head_border{
+       background-color:$primary-brand;
+        width:108px; 
+        height:8px;
+        margin-top: 3rem;
+    }
+  
+    }
+   
+    .rightside_banner{
+        padding:16px 0 ;
+        img{
+            object-fit: cover;
+            object-position: 100% 30%;
+            height: 320px;
+        }
+    }
+}
+

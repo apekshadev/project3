@@ -1,0 +1,80 @@
+
+.mobilefilter_menu{
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    bottom: 0;
+    left: 10%;
+    right: 0;
+    background-color:$white;
+    height: 200vh;
+    animation: moveToRight .5s ease-in-out;
+    display: none;
+        @keyframes moveToRight {
+            0% {
+                transform: translateX(500px);
+            }
+            100% {
+                transform: translateX(0px);
+            }
+        }
+        
+    
+        h6{
+    
+            @include mainFont($font-size-16, $line-spacing-24, $font-family-muli, $font-weight-600);
+            color: $black-l2;
+        }
+        nav{
+
+            background-color: $gray-l1;
+            padding: 11px 24px 13px 24px;
+            position: sticky;
+     
+
+     
+            ul {
+                display: flex;
+                justify-content: space-between;
+                    li{
+            
+                    @include mainFont($font-size-16, $line-spacing-24, $font-family-muli, $font-weight-600);
+                    color: $black-m1;
+                    letter-spacing: 0.32px;
+                    }
+                }
+            }
+    
+    
+      
+        
+        .attribute{    
+            padding: 16px 0 32px 24px;
+            border-bottom: 2px solid $gray-l1;
+            a{
+                @include mainFont($font-size-14, $line-spacing-24, $font-family-muli, $font-style-normal);
+                color: $gray-d2;
+                text-decoration: underline;
+         
+            }
+            .checkbox{  
+                padding-top: 16px;
+                input{
+                    accent-color: $primary-brand;
+                    border: 2px solid $primary-brand;
+                    width: 24px;
+                    height: 24px;
+                  
+                }
+            label{
+                margin-left: 16px;
+                font-family: $font-family-muli;
+            }}
+        }
+    .action{
+        display: flex;
+        justify-content: center;
+        padding-top: 32px;
+    }
+    
+}

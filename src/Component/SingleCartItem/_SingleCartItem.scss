@@ -1,0 +1,99 @@
+@use "../common/mixin";
+@use "../common/variables";
+
+.single_cartItem{
+    padding-right: 100px;
+    margin-bottom:33px ;
+
+ .singlecart_left{
+    figure{
+        img{
+            height:12rem;
+        
+          }
+    }
+   
+   
+ }
+ .singlecart_middle{
+  
+   strong{
+   
+
+    @include mainFont($font-size-20, $line-spacing-25, $font-family-muli, $font-weight-600);
+    color: $black;
+   }
+   p{
+    padding-top: 8px;
+
+    @include mainFont($font-size-16, $line-spacing-24, $font-family-muli, $font-style-normal);
+    color: $black;
+   }
+  
+   
+ }
+ .singlecart_right{
+.center{
+    display: flex;
+    align-items: center;
+    padding: 25% 0;
+    button{
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: $white;
+        border: 2px solid $gray-l2;
+        color:  $gray-l2;
+    }
+    button:disabled {
+        background: $grey-l0;
+      }
+ input{
+    width: 88px;
+    height: 40px;
+    border: 2px solid $gray-l2;
+    background: $white;
+    border-radius: 8px;
+    text-align: center;
+    margin: 0 8px;
+        }
+    }
+}
+ 
+
+ .singleCart_action{
+    padding-top: 34px;
+    position: relative;
+    button{
+    background: none;
+    color: $black;
+  
+    @include mainFont($font-size-12, $line-spacing-14, $font-family-muli, $font-weight-600);
+    border: none
+    
+    }
+    a{
+        color: $black;
+  
+        @include mainFont($font-size-12, $line-spacing-14, $font-family-muli, $font-weight-600);
+    }
+    img{
+        vertical-align: middle;
+        width: 14px;
+        height: 17px;
+        margin-right: 8px;
+
+    }
+    .desktophide_action{
+        display: none;
+        font-size: 32px;
+        color: $gray-l2;
+        position: absolute;
+        top: -10px;
+        left: 0;
+    }
+    .phonehide_action{
+        display: block;
+    }
+}
+}

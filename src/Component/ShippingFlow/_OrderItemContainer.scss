@@ -1,0 +1,11 @@
+.order_container{
+    margin-bottom: 32px;
+    padding: 24px;
+    border: 1px solid #D1D3D6;
+    border-radius: 2px;
+    h4{
+       
+        @include mainFont($font-size-16, $line-spacing-20, $font-family-muli, $font-weight-600);
+        color: #172026;
+    }
+}

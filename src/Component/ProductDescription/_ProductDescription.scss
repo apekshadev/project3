@@ -1,0 +1,36 @@
+@use "../../Style/Common/variables";
+.prod_Description{
+    .mainprod_head{
+        padding-top: 50px;
+    }
+   
+    p{
+      
+        @include mainFont($font-size-16, $line-spacing-24, $font-family-muli, $font-style-normal);
+        max-width: 100%;
+    }
+    h1{
+        
+        @include mainFont($font-size-36, $line-spacing-45,$font-family-source-serif-pro, $font-weight-600);
+       
+    }
+    h5{
+        padding-bottom: 16px;
+   
+        @include mainFont($font-size-20, $line-spacing-25,$font-family-muli, $font-weight-600);
+    }
+    .right_details{
+        padding-top: 24px;
+        button{
+            background-color: $primary-brand;
+            width: 102px;
+            height: 8px;
+            border: none;
+            display: block;
+            margin-top: 32px;
+        }
+    }
+
+      
+}
+

@@ -1,0 +1,24 @@
+@use  "../../Style/Common/mixin";
+@use  "../../Style/Common/variables";
+.btn_lab{
+    padding: 11px 69px;
+    background-color: $primary-brand;
+    border: none;
+    @include font-button;
+    text-transform: uppercase;
+    &:hover, 
+    &:focus {
+    animation: pulse 1s;
+    box-shadow: 0 0 0 0.2em rgba($white,0);
+    transition: box-shadow 0.5s;
+  
+    cursor: pointer;
+    }
+
+    @keyframes pulse {
+    0% { 
+        box-shadow: 0 0 0 0 $main_black; 
+    }
+    }
+}  
+

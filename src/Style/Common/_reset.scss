@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  ol,ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  }
+  li{
+  line-height: inherit;
+  }
+  a{
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    text-decoration: none;
+    cursor: pointer;
+}
+  fieldset{
+  border: 0;
+ 
+  }
+  img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  }
+  /* Common CSS */
+  body{
+  font-family: 'proxima nova', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  overflow-x: hidden;
+
+  }
+  input,
+  select{
+    vertical-align:top;
+  }
+  .align_center{
+    text-align: center;
+  }

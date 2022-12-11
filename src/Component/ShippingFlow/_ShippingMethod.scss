@@ -1,0 +1,35 @@
+.shipMethod_info{
+   
+    form{
+        .radio_control{
+            padding-top: 20px;
+            input{
+                accent-color: $primary-brand;
+                border: 2px solid $primary-brand;  
+                width: 24px;
+                height: 24px;
+              
+            }
+            label{
+                padding-left: 15px;
+        
+                @include mainFont($font-size-16, $line-spacing-24, $font-family-muli, $font-style-normal);
+                color: $color-172026;
+            }
+        }
+        .action{
+            padding: 48px 0;
+            display: flex;
+            justify-content: center;
+
+           .shipping_button{
+            border: 2px solid $primary-l2;
+            background: $white 0% 0% no-repeat padding-box;
+            color: $primary-l2;
+            .btn_mobiletext{
+                display: none;
+            }
+           }
+        }
+    }
+}

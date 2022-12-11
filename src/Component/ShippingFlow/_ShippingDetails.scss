@@ -1,0 +1,36 @@
+.shipInfo_details{
+    margin-bottom: 32px;
+    padding: 24px;
+    border: 1px solid $border-color;
+    border-radius: 2px;
+    h4{
+  
+        @include mainFont($font-size-16, $line-spacing-24, $font-family-muli, $font-style-normal);
+        color: $color-172026;
+    }
+    p{
+     
+        @include mainFont($font-size-16, $line-spacing-24, $font-family-muli, $font-style-normal);
+        color: $gray-d1;
+    }
+    .shipInfo_details_top{
+        display: flex;
+        justify-content: space-between;
+        .edit_button{
+            background-color: transparent;
+            color: $primary-brand;
+            text-transform: none;
+            border: none;
+      
+            @include mainFont($font-size-16, $line-spacing-22, $font-family-muli, $font-weight-600);
+            img{
+                width: 16px;
+                height: 16px;
+                vertical-align: middle;
+                margin-right: 7px;
+              
+            }
+        }
+    }
+   
+}

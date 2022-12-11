@@ -1,0 +1,16 @@
+
+.sort_dropdown{
+    select{ 
+        padding: 10px;
+        border-radius: 7px;
+        border-color:$gray-l2 ;       
+        @include font-two;
+    
+        option{
+            @include font-two;
+    
+        }
+    }
+
+}
+ 

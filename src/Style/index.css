@@ -1,0 +1,8260 @@
+/* grid component */
+.aem-Grid {
+  display: block;
+  width: 100%;
+}
+
+.aem-Grid::before,
+.aem-Grid::after {
+  display: table;
+  content: " ";
+}
+
+.aem-Grid::after {
+  clear: both;
+}
+
+/* placeholder for new components */
+.aem-Grid-newComponent {
+  clear: both;
+  margin: 0;
+}
+
+/* column of a grid */
+.aem-GridColumn {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  clear: both;
+}
+
+/* API function to be called to generate a grid config */
+/* example configuration */
+.aem-Grid.aem-Grid--1 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--default--1 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--2 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 50%;
+}
+
+.aem-Grid.aem-Grid--2 > .aem-GridColumn.aem-GridColumn--default--2 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--default--2 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 50%;
+}
+
+.aem-Grid.aem-Grid--default--2 > .aem-GridColumn.aem-GridColumn--default--2 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--3 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 33.33333333%;
+}
+
+.aem-Grid.aem-Grid--3 > .aem-GridColumn.aem-GridColumn--default--2 {
+  float: left;
+  clear: none;
+  width: 66.66666667%;
+}
+
+.aem-Grid.aem-Grid--3 > .aem-GridColumn.aem-GridColumn--default--3 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--default--3 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 33.33333333%;
+}
+
+.aem-Grid.aem-Grid--default--3 > .aem-GridColumn.aem-GridColumn--default--2 {
+  float: left;
+  clear: none;
+  width: 66.66666667%;
+}
+
+.aem-Grid.aem-Grid--default--3 > .aem-GridColumn.aem-GridColumn--default--3 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--4 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 25%;
+}
+
+.aem-Grid.aem-Grid--4 > .aem-GridColumn.aem-GridColumn--default--2 {
+  float: left;
+  clear: none;
+  width: 50%;
+}
+
+.aem-Grid.aem-Grid--4 > .aem-GridColumn.aem-GridColumn--default--3 {
+  float: left;
+  clear: none;
+  width: 75%;
+}
+
+.aem-Grid.aem-Grid--4 > .aem-GridColumn.aem-GridColumn--default--4 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--default--4 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 25%;
+}
+
+.aem-Grid.aem-Grid--default--4 > .aem-GridColumn.aem-GridColumn--default--2 {
+  float: left;
+  clear: none;
+  width: 50%;
+}
+
+.aem-Grid.aem-Grid--default--4 > .aem-GridColumn.aem-GridColumn--default--3 {
+  float: left;
+  clear: none;
+  width: 75%;
+}
+
+.aem-Grid.aem-Grid--default--4 > .aem-GridColumn.aem-GridColumn--default--4 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--5 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 20%;
+}
+
+.aem-Grid.aem-Grid--5 > .aem-GridColumn.aem-GridColumn--default--2 {
+  float: left;
+  clear: none;
+  width: 40%;
+}
+
+.aem-Grid.aem-Grid--5 > .aem-GridColumn.aem-GridColumn--default--3 {
+  float: left;
+  clear: none;
+  width: 60%;
+}
+
+.aem-Grid.aem-Grid--5 > .aem-GridColumn.aem-GridColumn--default--4 {
+  float: left;
+  clear: none;
+  width: 80%;
+}
+
+.aem-Grid.aem-Grid--5 > .aem-GridColumn.aem-GridColumn--default--5 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--default--5 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 20%;
+}
+
+.aem-Grid.aem-Grid--default--5 > .aem-GridColumn.aem-GridColumn--default--2 {
+  float: left;
+  clear: none;
+  width: 40%;
+}
+
+.aem-Grid.aem-Grid--default--5 > .aem-GridColumn.aem-GridColumn--default--3 {
+  float: left;
+  clear: none;
+  width: 60%;
+}
+
+.aem-Grid.aem-Grid--default--5 > .aem-GridColumn.aem-GridColumn--default--4 {
+  float: left;
+  clear: none;
+  width: 80%;
+}
+
+.aem-Grid.aem-Grid--default--5 > .aem-GridColumn.aem-GridColumn--default--5 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--6 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 16.66666667%;
+}
+
+.aem-Grid.aem-Grid--6 > .aem-GridColumn.aem-GridColumn--default--2 {
+  float: left;
+  clear: none;
+  width: 33.33333333%;
+}
+
+.aem-Grid.aem-Grid--6 > .aem-GridColumn.aem-GridColumn--default--3 {
+  float: left;
+  clear: none;
+  width: 50%;
+}
+
+.aem-Grid.aem-Grid--6 > .aem-GridColumn.aem-GridColumn--default--4 {
+  float: left;
+  clear: none;
+  width: 66.66666667%;
+}
+
+.aem-Grid.aem-Grid--6 > .aem-GridColumn.aem-GridColumn--default--5 {
+  float: left;
+  clear: none;
+  width: 83.33333333%;
+}
+
+.aem-Grid.aem-Grid--6 > .aem-GridColumn.aem-GridColumn--default--6 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--default--6 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 16.66666667%;
+}
+
+.aem-Grid.aem-Grid--default--6 > .aem-GridColumn.aem-GridColumn--default--2 {
+  float: left;
+  clear: none;
+  width: 33.33333333%;
+}
+
+.aem-Grid.aem-Grid--default--6 > .aem-GridColumn.aem-GridColumn--default--3 {
+  float: left;
+  clear: none;
+  width: 50%;
+}
+
+.aem-Grid.aem-Grid--default--6 > .aem-GridColumn.aem-GridColumn--default--4 {
+  float: left;
+  clear: none;
+  width: 66.66666667%;
+}
+
+.aem-Grid.aem-Grid--default--6 > .aem-GridColumn.aem-GridColumn--default--5 {
+  float: left;
+  clear: none;
+  width: 83.33333333%;
+}
+
+.aem-Grid.aem-Grid--default--6 > .aem-GridColumn.aem-GridColumn--default--6 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--7 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 14.28571429%;
+}
+
+.aem-Grid.aem-Grid--7 > .aem-GridColumn.aem-GridColumn--default--2 {
+  float: left;
+  clear: none;
+  width: 28.57142857%;
+}
+
+.aem-Grid.aem-Grid--7 > .aem-GridColumn.aem-GridColumn--default--3 {
+  float: left;
+  clear: none;
+  width: 42.85714286%;
+}
+
+.aem-Grid.aem-Grid--7 > .aem-GridColumn.aem-GridColumn--default--4 {
+  float: left;
+  clear: none;
+  width: 57.14285714%;
+}
+
+.aem-Grid.aem-Grid--7 > .aem-GridColumn.aem-GridColumn--default--5 {
+  float: left;
+  clear: none;
+  width: 71.42857143%;
+}
+
+.aem-Grid.aem-Grid--7 > .aem-GridColumn.aem-GridColumn--default--6 {
+  float: left;
+  clear: none;
+  width: 85.71428571%;
+}
+
+.aem-Grid.aem-Grid--7 > .aem-GridColumn.aem-GridColumn--default--7 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--default--7 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 14.28571429%;
+}
+
+.aem-Grid.aem-Grid--default--7 > .aem-GridColumn.aem-GridColumn--default--2 {
+  float: left;
+  clear: none;
+  width: 28.57142857%;
+}
+
+.aem-Grid.aem-Grid--default--7 > .aem-GridColumn.aem-GridColumn--default--3 {
+  float: left;
+  clear: none;
+  width: 42.85714286%;
+}
+
+.aem-Grid.aem-Grid--default--7 > .aem-GridColumn.aem-GridColumn--default--4 {
+  float: left;
+  clear: none;
+  width: 57.14285714%;
+}
+
+.aem-Grid.aem-Grid--default--7 > .aem-GridColumn.aem-GridColumn--default--5 {
+  float: left;
+  clear: none;
+  width: 71.42857143%;
+}
+
+.aem-Grid.aem-Grid--default--7 > .aem-GridColumn.aem-GridColumn--default--6 {
+  float: left;
+  clear: none;
+  width: 85.71428571%;
+}
+
+.aem-Grid.aem-Grid--default--7 > .aem-GridColumn.aem-GridColumn--default--7 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 12.5%;
+}
+
+.aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--default--2 {
+  float: left;
+  clear: none;
+  width: 25%;
+}
+
+.aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--default--3 {
+  float: left;
+  clear: none;
+  width: 37.5%;
+}
+
+.aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--default--4 {
+  float: left;
+  clear: none;
+  width: 50%;
+}
+
+.aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--default--5 {
+  float: left;
+  clear: none;
+  width: 62.5%;
+}
+
+.aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--default--6 {
+  float: left;
+  clear: none;
+  width: 75%;
+}
+
+.aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--default--7 {
+  float: left;
+  clear: none;
+  width: 87.5%;
+}
+
+.aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--default--8 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--default--8 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 12.5%;
+}
+
+.aem-Grid.aem-Grid--default--8 > .aem-GridColumn.aem-GridColumn--default--2 {
+  float: left;
+  clear: none;
+  width: 25%;
+}
+
+.aem-Grid.aem-Grid--default--8 > .aem-GridColumn.aem-GridColumn--default--3 {
+  float: left;
+  clear: none;
+  width: 37.5%;
+}
+
+.aem-Grid.aem-Grid--default--8 > .aem-GridColumn.aem-GridColumn--default--4 {
+  float: left;
+  clear: none;
+  width: 50%;
+}
+
+.aem-Grid.aem-Grid--default--8 > .aem-GridColumn.aem-GridColumn--default--5 {
+  float: left;
+  clear: none;
+  width: 62.5%;
+}
+
+.aem-Grid.aem-Grid--default--8 > .aem-GridColumn.aem-GridColumn--default--6 {
+  float: left;
+  clear: none;
+  width: 75%;
+}
+
+.aem-Grid.aem-Grid--default--8 > .aem-GridColumn.aem-GridColumn--default--7 {
+  float: left;
+  clear: none;
+  width: 87.5%;
+}
+
+.aem-Grid.aem-Grid--default--8 > .aem-GridColumn.aem-GridColumn--default--8 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 11.11111111%;
+}
+
+.aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--default--2 {
+  float: left;
+  clear: none;
+  width: 22.22222222%;
+}
+
+.aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--default--3 {
+  float: left;
+  clear: none;
+  width: 33.33333333%;
+}
+
+.aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--default--4 {
+  float: left;
+  clear: none;
+  width: 44.44444444%;
+}
+
+.aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--default--5 {
+  float: left;
+  clear: none;
+  width: 55.55555556%;
+}
+
+.aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--default--6 {
+  float: left;
+  clear: none;
+  width: 66.66666667%;
+}
+
+.aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--default--7 {
+  float: left;
+  clear: none;
+  width: 77.77777778%;
+}
+
+.aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--default--8 {
+  float: left;
+  clear: none;
+  width: 88.88888889%;
+}
+
+.aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--default--9 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--default--9 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 11.11111111%;
+}
+
+.aem-Grid.aem-Grid--default--9 > .aem-GridColumn.aem-GridColumn--default--2 {
+  float: left;
+  clear: none;
+  width: 22.22222222%;
+}
+
+.aem-Grid.aem-Grid--default--9 > .aem-GridColumn.aem-GridColumn--default--3 {
+  float: left;
+  clear: none;
+  width: 33.33333333%;
+}
+
+.aem-Grid.aem-Grid--default--9 > .aem-GridColumn.aem-GridColumn--default--4 {
+  float: left;
+  clear: none;
+  width: 44.44444444%;
+}
+
+.aem-Grid.aem-Grid--default--9 > .aem-GridColumn.aem-GridColumn--default--5 {
+  float: left;
+  clear: none;
+  width: 55.55555556%;
+}
+
+.aem-Grid.aem-Grid--default--9 > .aem-GridColumn.aem-GridColumn--default--6 {
+  float: left;
+  clear: none;
+  width: 66.66666667%;
+}
+
+.aem-Grid.aem-Grid--default--9 > .aem-GridColumn.aem-GridColumn--default--7 {
+  float: left;
+  clear: none;
+  width: 77.77777778%;
+}
+
+.aem-Grid.aem-Grid--default--9 > .aem-GridColumn.aem-GridColumn--default--8 {
+  float: left;
+  clear: none;
+  width: 88.88888889%;
+}
+
+.aem-Grid.aem-Grid--default--9 > .aem-GridColumn.aem-GridColumn--default--9 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 10%;
+}
+
+.aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--default--2 {
+  float: left;
+  clear: none;
+  width: 20%;
+}
+
+.aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--default--3 {
+  float: left;
+  clear: none;
+  width: 30%;
+}
+
+.aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--default--4 {
+  float: left;
+  clear: none;
+  width: 40%;
+}
+
+.aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--default--5 {
+  float: left;
+  clear: none;
+  width: 50%;
+}
+
+.aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--default--6 {
+  float: left;
+  clear: none;
+  width: 60%;
+}
+
+.aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--default--7 {
+  float: left;
+  clear: none;
+  width: 70%;
+}
+
+.aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--default--8 {
+  float: left;
+  clear: none;
+  width: 80%;
+}
+
+.aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--default--9 {
+  float: left;
+  clear: none;
+  width: 90%;
+}
+
+.aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--default--10 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--default--10 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 10%;
+}
+
+.aem-Grid.aem-Grid--default--10 > .aem-GridColumn.aem-GridColumn--default--2 {
+  float: left;
+  clear: none;
+  width: 20%;
+}
+
+.aem-Grid.aem-Grid--default--10 > .aem-GridColumn.aem-GridColumn--default--3 {
+  float: left;
+  clear: none;
+  width: 30%;
+}
+
+.aem-Grid.aem-Grid--default--10 > .aem-GridColumn.aem-GridColumn--default--4 {
+  float: left;
+  clear: none;
+  width: 40%;
+}
+
+.aem-Grid.aem-Grid--default--10 > .aem-GridColumn.aem-GridColumn--default--5 {
+  float: left;
+  clear: none;
+  width: 50%;
+}
+
+.aem-Grid.aem-Grid--default--10 > .aem-GridColumn.aem-GridColumn--default--6 {
+  float: left;
+  clear: none;
+  width: 60%;
+}
+
+.aem-Grid.aem-Grid--default--10 > .aem-GridColumn.aem-GridColumn--default--7 {
+  float: left;
+  clear: none;
+  width: 70%;
+}
+
+.aem-Grid.aem-Grid--default--10 > .aem-GridColumn.aem-GridColumn--default--8 {
+  float: left;
+  clear: none;
+  width: 80%;
+}
+
+.aem-Grid.aem-Grid--default--10 > .aem-GridColumn.aem-GridColumn--default--9 {
+  float: left;
+  clear: none;
+  width: 90%;
+}
+
+.aem-Grid.aem-Grid--default--10 > .aem-GridColumn.aem-GridColumn--default--10 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 9.09090909%;
+}
+
+.aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--default--2 {
+  float: left;
+  clear: none;
+  width: 18.18181818%;
+}
+
+.aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--default--3 {
+  float: left;
+  clear: none;
+  width: 27.27272727%;
+}
+
+.aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--default--4 {
+  float: left;
+  clear: none;
+  width: 36.36363636%;
+}
+
+.aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--default--5 {
+  float: left;
+  clear: none;
+  width: 45.45454545%;
+}
+
+.aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--default--6 {
+  float: left;
+  clear: none;
+  width: 54.54545455%;
+}
+
+.aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--default--7 {
+  float: left;
+  clear: none;
+  width: 63.63636364%;
+}
+
+.aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--default--8 {
+  float: left;
+  clear: none;
+  width: 72.72727273%;
+}
+
+.aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--default--9 {
+  float: left;
+  clear: none;
+  width: 81.81818182%;
+}
+
+.aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--default--10 {
+  float: left;
+  clear: none;
+  width: 90.90909091%;
+}
+
+.aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--default--11 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--default--11 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 9.09090909%;
+}
+
+.aem-Grid.aem-Grid--default--11 > .aem-GridColumn.aem-GridColumn--default--2 {
+  float: left;
+  clear: none;
+  width: 18.18181818%;
+}
+
+.aem-Grid.aem-Grid--default--11 > .aem-GridColumn.aem-GridColumn--default--3 {
+  float: left;
+  clear: none;
+  width: 27.27272727%;
+}
+
+.aem-Grid.aem-Grid--default--11 > .aem-GridColumn.aem-GridColumn--default--4 {
+  float: left;
+  clear: none;
+  width: 36.36363636%;
+}
+
+.aem-Grid.aem-Grid--default--11 > .aem-GridColumn.aem-GridColumn--default--5 {
+  float: left;
+  clear: none;
+  width: 45.45454545%;
+}
+
+.aem-Grid.aem-Grid--default--11 > .aem-GridColumn.aem-GridColumn--default--6 {
+  float: left;
+  clear: none;
+  width: 54.54545455%;
+}
+
+.aem-Grid.aem-Grid--default--11 > .aem-GridColumn.aem-GridColumn--default--7 {
+  float: left;
+  clear: none;
+  width: 63.63636364%;
+}
+
+.aem-Grid.aem-Grid--default--11 > .aem-GridColumn.aem-GridColumn--default--8 {
+  float: left;
+  clear: none;
+  width: 72.72727273%;
+}
+
+.aem-Grid.aem-Grid--default--11 > .aem-GridColumn.aem-GridColumn--default--9 {
+  float: left;
+  clear: none;
+  width: 81.81818182%;
+}
+
+.aem-Grid.aem-Grid--default--11 > .aem-GridColumn.aem-GridColumn--default--10 {
+  float: left;
+  clear: none;
+  width: 90.90909091%;
+}
+
+.aem-Grid.aem-Grid--default--11 > .aem-GridColumn.aem-GridColumn--default--11 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 8.33333333%;
+}
+
+.aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--default--2 {
+  float: left;
+  clear: none;
+  width: 16.66666667%;
+}
+
+.aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--default--3 {
+  float: left;
+  clear: none;
+  width: 25%;
+}
+
+.aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--default--4 {
+  float: left;
+  clear: none;
+  width: 33.33333333%;
+}
+
+.aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--default--5 {
+  float: left;
+  clear: none;
+  width: 41.66666667%;
+}
+
+.aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--default--6 {
+  float: left;
+  clear: none;
+  width: 50%;
+}
+
+.aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--default--7 {
+  float: left;
+  clear: none;
+  width: 58.33333333%;
+}
+
+.aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--default--8 {
+  float: left;
+  clear: none;
+  width: 66.66666667%;
+}
+
+.aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--default--9 {
+  float: left;
+  clear: none;
+  width: 75%;
+}
+
+.aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--default--10 {
+  float: left;
+  clear: none;
+  width: 83.33333333%;
+}
+
+.aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--default--11 {
+  float: left;
+  clear: none;
+  width: 91.66666667%;
+}
+
+.aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--default--12 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--default--12 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 8.33333333%;
+}
+
+.aem-Grid.aem-Grid--default--12 > .aem-GridColumn.aem-GridColumn--default--2 {
+  float: left;
+  clear: none;
+  width: 16.66666667%;
+}
+
+.aem-Grid.aem-Grid--default--12 > .aem-GridColumn.aem-GridColumn--default--3 {
+  float: left;
+  clear: none;
+  width: 25%;
+}
+
+.aem-Grid.aem-Grid--default--12 > .aem-GridColumn.aem-GridColumn--default--4 {
+  float: left;
+  clear: none;
+  width: 33.33333333%;
+}
+
+.aem-Grid.aem-Grid--default--12 > .aem-GridColumn.aem-GridColumn--default--5 {
+  float: left;
+  clear: none;
+  width: 41.66666667%;
+}
+
+.aem-Grid.aem-Grid--default--12 > .aem-GridColumn.aem-GridColumn--default--6 {
+  float: left;
+  clear: none;
+  width: 50%;
+}
+
+.aem-Grid.aem-Grid--default--12 > .aem-GridColumn.aem-GridColumn--default--7 {
+  float: left;
+  clear: none;
+  width: 58.33333333%;
+}
+
+.aem-Grid.aem-Grid--default--12 > .aem-GridColumn.aem-GridColumn--default--8 {
+  float: left;
+  clear: none;
+  width: 66.66666667%;
+}
+
+.aem-Grid.aem-Grid--default--12 > .aem-GridColumn.aem-GridColumn--default--9 {
+  float: left;
+  clear: none;
+  width: 75%;
+}
+
+.aem-Grid.aem-Grid--default--12 > .aem-GridColumn.aem-GridColumn--default--10 {
+  float: left;
+  clear: none;
+  width: 83.33333333%;
+}
+
+.aem-Grid.aem-Grid--default--12 > .aem-GridColumn.aem-GridColumn--default--11 {
+  float: left;
+  clear: none;
+  width: 91.66666667%;
+}
+
+.aem-Grid.aem-Grid--default--12 > .aem-GridColumn.aem-GridColumn--default--12 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid > .aem-GridColumn.aem-GridColumn--default--newline {
+  /* newline behavior */
+  clear: both !important;
+}
+
+.aem-Grid > .aem-GridColumn.aem-GridColumn--default--hide {
+  /* hide behavior */
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .aem-Grid.aem-Grid--1 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--phone--1 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--2 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--2 > .aem-GridColumn.aem-GridColumn--phone--2 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--phone--2 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--phone--2 > .aem-GridColumn.aem-GridColumn--phone--2 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--3 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 33.33333333%;
+  }
+  .aem-Grid.aem-Grid--3 > .aem-GridColumn.aem-GridColumn--phone--2 {
+    float: left;
+    clear: none;
+    width: 66.66666667%;
+  }
+  .aem-Grid.aem-Grid--3 > .aem-GridColumn.aem-GridColumn--phone--3 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--phone--3 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 33.33333333%;
+  }
+  .aem-Grid.aem-Grid--phone--3 > .aem-GridColumn.aem-GridColumn--phone--2 {
+    float: left;
+    clear: none;
+    width: 66.66666667%;
+  }
+  .aem-Grid.aem-Grid--phone--3 > .aem-GridColumn.aem-GridColumn--phone--3 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--4 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 25%;
+  }
+  .aem-Grid.aem-Grid--4 > .aem-GridColumn.aem-GridColumn--phone--2 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--4 > .aem-GridColumn.aem-GridColumn--phone--3 {
+    float: left;
+    clear: none;
+    width: 75%;
+  }
+  .aem-Grid.aem-Grid--4 > .aem-GridColumn.aem-GridColumn--phone--4 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--phone--4 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 25%;
+  }
+  .aem-Grid.aem-Grid--phone--4 > .aem-GridColumn.aem-GridColumn--phone--2 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--phone--4 > .aem-GridColumn.aem-GridColumn--phone--3 {
+    float: left;
+    clear: none;
+    width: 75%;
+  }
+  .aem-Grid.aem-Grid--phone--4 > .aem-GridColumn.aem-GridColumn--phone--4 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--5 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 20%;
+  }
+  .aem-Grid.aem-Grid--5 > .aem-GridColumn.aem-GridColumn--phone--2 {
+    float: left;
+    clear: none;
+    width: 40%;
+  }
+  .aem-Grid.aem-Grid--5 > .aem-GridColumn.aem-GridColumn--phone--3 {
+    float: left;
+    clear: none;
+    width: 60%;
+  }
+  .aem-Grid.aem-Grid--5 > .aem-GridColumn.aem-GridColumn--phone--4 {
+    float: left;
+    clear: none;
+    width: 80%;
+  }
+  .aem-Grid.aem-Grid--5 > .aem-GridColumn.aem-GridColumn--phone--5 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--phone--5 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 20%;
+  }
+  .aem-Grid.aem-Grid--phone--5 > .aem-GridColumn.aem-GridColumn--phone--2 {
+    float: left;
+    clear: none;
+    width: 40%;
+  }
+  .aem-Grid.aem-Grid--phone--5 > .aem-GridColumn.aem-GridColumn--phone--3 {
+    float: left;
+    clear: none;
+    width: 60%;
+  }
+  .aem-Grid.aem-Grid--phone--5 > .aem-GridColumn.aem-GridColumn--phone--4 {
+    float: left;
+    clear: none;
+    width: 80%;
+  }
+  .aem-Grid.aem-Grid--phone--5 > .aem-GridColumn.aem-GridColumn--phone--5 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--6 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 16.66666667%;
+  }
+  .aem-Grid.aem-Grid--6 > .aem-GridColumn.aem-GridColumn--phone--2 {
+    float: left;
+    clear: none;
+    width: 33.33333333%;
+  }
+  .aem-Grid.aem-Grid--6 > .aem-GridColumn.aem-GridColumn--phone--3 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--6 > .aem-GridColumn.aem-GridColumn--phone--4 {
+    float: left;
+    clear: none;
+    width: 66.66666667%;
+  }
+  .aem-Grid.aem-Grid--6 > .aem-GridColumn.aem-GridColumn--phone--5 {
+    float: left;
+    clear: none;
+    width: 83.33333333%;
+  }
+  .aem-Grid.aem-Grid--6 > .aem-GridColumn.aem-GridColumn--phone--6 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--phone--6 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 16.66666667%;
+  }
+  .aem-Grid.aem-Grid--phone--6 > .aem-GridColumn.aem-GridColumn--phone--2 {
+    float: left;
+    clear: none;
+    width: 33.33333333%;
+  }
+  .aem-Grid.aem-Grid--phone--6 > .aem-GridColumn.aem-GridColumn--phone--3 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--phone--6 > .aem-GridColumn.aem-GridColumn--phone--4 {
+    float: left;
+    clear: none;
+    width: 66.66666667%;
+  }
+  .aem-Grid.aem-Grid--phone--6 > .aem-GridColumn.aem-GridColumn--phone--5 {
+    float: left;
+    clear: none;
+    width: 83.33333333%;
+  }
+  .aem-Grid.aem-Grid--phone--6 > .aem-GridColumn.aem-GridColumn--phone--6 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--7 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 14.28571429%;
+  }
+  .aem-Grid.aem-Grid--7 > .aem-GridColumn.aem-GridColumn--phone--2 {
+    float: left;
+    clear: none;
+    width: 28.57142857%;
+  }
+  .aem-Grid.aem-Grid--7 > .aem-GridColumn.aem-GridColumn--phone--3 {
+    float: left;
+    clear: none;
+    width: 42.85714286%;
+  }
+  .aem-Grid.aem-Grid--7 > .aem-GridColumn.aem-GridColumn--phone--4 {
+    float: left;
+    clear: none;
+    width: 57.14285714%;
+  }
+  .aem-Grid.aem-Grid--7 > .aem-GridColumn.aem-GridColumn--phone--5 {
+    float: left;
+    clear: none;
+    width: 71.42857143%;
+  }
+  .aem-Grid.aem-Grid--7 > .aem-GridColumn.aem-GridColumn--phone--6 {
+    float: left;
+    clear: none;
+    width: 85.71428571%;
+  }
+  .aem-Grid.aem-Grid--7 > .aem-GridColumn.aem-GridColumn--phone--7 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--phone--7 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 14.28571429%;
+  }
+  .aem-Grid.aem-Grid--phone--7 > .aem-GridColumn.aem-GridColumn--phone--2 {
+    float: left;
+    clear: none;
+    width: 28.57142857%;
+  }
+  .aem-Grid.aem-Grid--phone--7 > .aem-GridColumn.aem-GridColumn--phone--3 {
+    float: left;
+    clear: none;
+    width: 42.85714286%;
+  }
+  .aem-Grid.aem-Grid--phone--7 > .aem-GridColumn.aem-GridColumn--phone--4 {
+    float: left;
+    clear: none;
+    width: 57.14285714%;
+  }
+  .aem-Grid.aem-Grid--phone--7 > .aem-GridColumn.aem-GridColumn--phone--5 {
+    float: left;
+    clear: none;
+    width: 71.42857143%;
+  }
+  .aem-Grid.aem-Grid--phone--7 > .aem-GridColumn.aem-GridColumn--phone--6 {
+    float: left;
+    clear: none;
+    width: 85.71428571%;
+  }
+  .aem-Grid.aem-Grid--phone--7 > .aem-GridColumn.aem-GridColumn--phone--7 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 12.5%;
+  }
+  .aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--phone--2 {
+    float: left;
+    clear: none;
+    width: 25%;
+  }
+  .aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--phone--3 {
+    float: left;
+    clear: none;
+    width: 37.5%;
+  }
+  .aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--phone--4 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--phone--5 {
+    float: left;
+    clear: none;
+    width: 62.5%;
+  }
+  .aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--phone--6 {
+    float: left;
+    clear: none;
+    width: 75%;
+  }
+  .aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--phone--7 {
+    float: left;
+    clear: none;
+    width: 87.5%;
+  }
+  .aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--phone--8 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--phone--8 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 12.5%;
+  }
+  .aem-Grid.aem-Grid--phone--8 > .aem-GridColumn.aem-GridColumn--phone--2 {
+    float: left;
+    clear: none;
+    width: 25%;
+  }
+  .aem-Grid.aem-Grid--phone--8 > .aem-GridColumn.aem-GridColumn--phone--3 {
+    float: left;
+    clear: none;
+    width: 37.5%;
+  }
+  .aem-Grid.aem-Grid--phone--8 > .aem-GridColumn.aem-GridColumn--phone--4 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--phone--8 > .aem-GridColumn.aem-GridColumn--phone--5 {
+    float: left;
+    clear: none;
+    width: 62.5%;
+  }
+  .aem-Grid.aem-Grid--phone--8 > .aem-GridColumn.aem-GridColumn--phone--6 {
+    float: left;
+    clear: none;
+    width: 75%;
+  }
+  .aem-Grid.aem-Grid--phone--8 > .aem-GridColumn.aem-GridColumn--phone--7 {
+    float: left;
+    clear: none;
+    width: 87.5%;
+  }
+  .aem-Grid.aem-Grid--phone--8 > .aem-GridColumn.aem-GridColumn--phone--8 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 11.11111111%;
+  }
+  .aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--phone--2 {
+    float: left;
+    clear: none;
+    width: 22.22222222%;
+  }
+  .aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--phone--3 {
+    float: left;
+    clear: none;
+    width: 33.33333333%;
+  }
+  .aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--phone--4 {
+    float: left;
+    clear: none;
+    width: 44.44444444%;
+  }
+  .aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--phone--5 {
+    float: left;
+    clear: none;
+    width: 55.55555556%;
+  }
+  .aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--phone--6 {
+    float: left;
+    clear: none;
+    width: 66.66666667%;
+  }
+  .aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--phone--7 {
+    float: left;
+    clear: none;
+    width: 77.77777778%;
+  }
+  .aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--phone--8 {
+    float: left;
+    clear: none;
+    width: 88.88888889%;
+  }
+  .aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--phone--9 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--phone--9 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 11.11111111%;
+  }
+  .aem-Grid.aem-Grid--phone--9 > .aem-GridColumn.aem-GridColumn--phone--2 {
+    float: left;
+    clear: none;
+    width: 22.22222222%;
+  }
+  .aem-Grid.aem-Grid--phone--9 > .aem-GridColumn.aem-GridColumn--phone--3 {
+    float: left;
+    clear: none;
+    width: 33.33333333%;
+  }
+  .aem-Grid.aem-Grid--phone--9 > .aem-GridColumn.aem-GridColumn--phone--4 {
+    float: left;
+    clear: none;
+    width: 44.44444444%;
+  }
+  .aem-Grid.aem-Grid--phone--9 > .aem-GridColumn.aem-GridColumn--phone--5 {
+    float: left;
+    clear: none;
+    width: 55.55555556%;
+  }
+  .aem-Grid.aem-Grid--phone--9 > .aem-GridColumn.aem-GridColumn--phone--6 {
+    float: left;
+    clear: none;
+    width: 66.66666667%;
+  }
+  .aem-Grid.aem-Grid--phone--9 > .aem-GridColumn.aem-GridColumn--phone--7 {
+    float: left;
+    clear: none;
+    width: 77.77777778%;
+  }
+  .aem-Grid.aem-Grid--phone--9 > .aem-GridColumn.aem-GridColumn--phone--8 {
+    float: left;
+    clear: none;
+    width: 88.88888889%;
+  }
+  .aem-Grid.aem-Grid--phone--9 > .aem-GridColumn.aem-GridColumn--phone--9 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 10%;
+  }
+  .aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--phone--2 {
+    float: left;
+    clear: none;
+    width: 20%;
+  }
+  .aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--phone--3 {
+    float: left;
+    clear: none;
+    width: 30%;
+  }
+  .aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--phone--4 {
+    float: left;
+    clear: none;
+    width: 40%;
+  }
+  .aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--phone--5 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--phone--6 {
+    float: left;
+    clear: none;
+    width: 60%;
+  }
+  .aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--phone--7 {
+    float: left;
+    clear: none;
+    width: 70%;
+  }
+  .aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--phone--8 {
+    float: left;
+    clear: none;
+    width: 80%;
+  }
+  .aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--phone--9 {
+    float: left;
+    clear: none;
+    width: 90%;
+  }
+  .aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--phone--10 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--phone--10 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 10%;
+  }
+  .aem-Grid.aem-Grid--phone--10 > .aem-GridColumn.aem-GridColumn--phone--2 {
+    float: left;
+    clear: none;
+    width: 20%;
+  }
+  .aem-Grid.aem-Grid--phone--10 > .aem-GridColumn.aem-GridColumn--phone--3 {
+    float: left;
+    clear: none;
+    width: 30%;
+  }
+  .aem-Grid.aem-Grid--phone--10 > .aem-GridColumn.aem-GridColumn--phone--4 {
+    float: left;
+    clear: none;
+    width: 40%;
+  }
+  .aem-Grid.aem-Grid--phone--10 > .aem-GridColumn.aem-GridColumn--phone--5 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--phone--10 > .aem-GridColumn.aem-GridColumn--phone--6 {
+    float: left;
+    clear: none;
+    width: 60%;
+  }
+  .aem-Grid.aem-Grid--phone--10 > .aem-GridColumn.aem-GridColumn--phone--7 {
+    float: left;
+    clear: none;
+    width: 70%;
+  }
+  .aem-Grid.aem-Grid--phone--10 > .aem-GridColumn.aem-GridColumn--phone--8 {
+    float: left;
+    clear: none;
+    width: 80%;
+  }
+  .aem-Grid.aem-Grid--phone--10 > .aem-GridColumn.aem-GridColumn--phone--9 {
+    float: left;
+    clear: none;
+    width: 90%;
+  }
+  .aem-Grid.aem-Grid--phone--10 > .aem-GridColumn.aem-GridColumn--phone--10 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 9.09090909%;
+  }
+  .aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--phone--2 {
+    float: left;
+    clear: none;
+    width: 18.18181818%;
+  }
+  .aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--phone--3 {
+    float: left;
+    clear: none;
+    width: 27.27272727%;
+  }
+  .aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--phone--4 {
+    float: left;
+    clear: none;
+    width: 36.36363636%;
+  }
+  .aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--phone--5 {
+    float: left;
+    clear: none;
+    width: 45.45454545%;
+  }
+  .aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--phone--6 {
+    float: left;
+    clear: none;
+    width: 54.54545455%;
+  }
+  .aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--phone--7 {
+    float: left;
+    clear: none;
+    width: 63.63636364%;
+  }
+  .aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--phone--8 {
+    float: left;
+    clear: none;
+    width: 72.72727273%;
+  }
+  .aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--phone--9 {
+    float: left;
+    clear: none;
+    width: 81.81818182%;
+  }
+  .aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--phone--10 {
+    float: left;
+    clear: none;
+    width: 90.90909091%;
+  }
+  .aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--phone--11 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--phone--11 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 9.09090909%;
+  }
+  .aem-Grid.aem-Grid--phone--11 > .aem-GridColumn.aem-GridColumn--phone--2 {
+    float: left;
+    clear: none;
+    width: 18.18181818%;
+  }
+  .aem-Grid.aem-Grid--phone--11 > .aem-GridColumn.aem-GridColumn--phone--3 {
+    float: left;
+    clear: none;
+    width: 27.27272727%;
+  }
+  .aem-Grid.aem-Grid--phone--11 > .aem-GridColumn.aem-GridColumn--phone--4 {
+    float: left;
+    clear: none;
+    width: 36.36363636%;
+  }
+  .aem-Grid.aem-Grid--phone--11 > .aem-GridColumn.aem-GridColumn--phone--5 {
+    float: left;
+    clear: none;
+    width: 45.45454545%;
+  }
+  .aem-Grid.aem-Grid--phone--11 > .aem-GridColumn.aem-GridColumn--phone--6 {
+    float: left;
+    clear: none;
+    width: 54.54545455%;
+  }
+  .aem-Grid.aem-Grid--phone--11 > .aem-GridColumn.aem-GridColumn--phone--7 {
+    float: left;
+    clear: none;
+    width: 63.63636364%;
+  }
+  .aem-Grid.aem-Grid--phone--11 > .aem-GridColumn.aem-GridColumn--phone--8 {
+    float: left;
+    clear: none;
+    width: 72.72727273%;
+  }
+  .aem-Grid.aem-Grid--phone--11 > .aem-GridColumn.aem-GridColumn--phone--9 {
+    float: left;
+    clear: none;
+    width: 81.81818182%;
+  }
+  .aem-Grid.aem-Grid--phone--11 > .aem-GridColumn.aem-GridColumn--phone--10 {
+    float: left;
+    clear: none;
+    width: 90.90909091%;
+  }
+  .aem-Grid.aem-Grid--phone--11 > .aem-GridColumn.aem-GridColumn--phone--11 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 8.33333333%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--phone--2 {
+    float: left;
+    clear: none;
+    width: 16.66666667%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--phone--3 {
+    float: left;
+    clear: none;
+    width: 25%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--phone--4 {
+    float: left;
+    clear: none;
+    width: 33.33333333%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--phone--5 {
+    float: left;
+    clear: none;
+    width: 41.66666667%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--phone--6 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--phone--7 {
+    float: left;
+    clear: none;
+    width: 58.33333333%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--phone--8 {
+    float: left;
+    clear: none;
+    width: 66.66666667%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--phone--9 {
+    float: left;
+    clear: none;
+    width: 75%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--phone--10 {
+    float: left;
+    clear: none;
+    width: 83.33333333%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--phone--11 {
+    float: left;
+    clear: none;
+    width: 91.66666667%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--phone--12 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--phone--12 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 8.33333333%;
+  }
+  .aem-Grid.aem-Grid--phone--12 > .aem-GridColumn.aem-GridColumn--phone--2 {
+    float: left;
+    clear: none;
+    width: 16.66666667%;
+  }
+  .aem-Grid.aem-Grid--phone--12 > .aem-GridColumn.aem-GridColumn--phone--3 {
+    float: left;
+    clear: none;
+    width: 25%;
+  }
+  .aem-Grid.aem-Grid--phone--12 > .aem-GridColumn.aem-GridColumn--phone--4 {
+    float: left;
+    clear: none;
+    width: 33.33333333%;
+  }
+  .aem-Grid.aem-Grid--phone--12 > .aem-GridColumn.aem-GridColumn--phone--5 {
+    float: left;
+    clear: none;
+    width: 41.66666667%;
+  }
+  .aem-Grid.aem-Grid--phone--12 > .aem-GridColumn.aem-GridColumn--phone--6 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--phone--12 > .aem-GridColumn.aem-GridColumn--phone--7 {
+    float: left;
+    clear: none;
+    width: 58.33333333%;
+  }
+  .aem-Grid.aem-Grid--phone--12 > .aem-GridColumn.aem-GridColumn--phone--8 {
+    float: left;
+    clear: none;
+    width: 66.66666667%;
+  }
+  .aem-Grid.aem-Grid--phone--12 > .aem-GridColumn.aem-GridColumn--phone--9 {
+    float: left;
+    clear: none;
+    width: 75%;
+  }
+  .aem-Grid.aem-Grid--phone--12 > .aem-GridColumn.aem-GridColumn--phone--10 {
+    float: left;
+    clear: none;
+    width: 83.33333333%;
+  }
+  .aem-Grid.aem-Grid--phone--12 > .aem-GridColumn.aem-GridColumn--phone--11 {
+    float: left;
+    clear: none;
+    width: 91.66666667%;
+  }
+  .aem-Grid.aem-Grid--phone--12 > .aem-GridColumn.aem-GridColumn--phone--12 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid > .aem-GridColumn.aem-GridColumn--phone--newline {
+    /* newline behavior */
+    clear: both !important;
+  }
+  .aem-Grid > .aem-GridColumn.aem-GridColumn--phone--hide {
+    /* hide behavior */
+    display: none;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .aem-Grid.aem-Grid--1 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--tablet--1 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--2 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--2 > .aem-GridColumn.aem-GridColumn--tablet--2 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--tablet--2 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--tablet--2 > .aem-GridColumn.aem-GridColumn--tablet--2 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--3 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 33.33333333%;
+  }
+  .aem-Grid.aem-Grid--3 > .aem-GridColumn.aem-GridColumn--tablet--2 {
+    float: left;
+    clear: none;
+    width: 66.66666667%;
+  }
+  .aem-Grid.aem-Grid--3 > .aem-GridColumn.aem-GridColumn--tablet--3 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--tablet--3 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 33.33333333%;
+  }
+  .aem-Grid.aem-Grid--tablet--3 > .aem-GridColumn.aem-GridColumn--tablet--2 {
+    float: left;
+    clear: none;
+    width: 66.66666667%;
+  }
+  .aem-Grid.aem-Grid--tablet--3 > .aem-GridColumn.aem-GridColumn--tablet--3 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--4 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 25%;
+  }
+  .aem-Grid.aem-Grid--4 > .aem-GridColumn.aem-GridColumn--tablet--2 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--4 > .aem-GridColumn.aem-GridColumn--tablet--3 {
+    float: left;
+    clear: none;
+    width: 75%;
+  }
+  .aem-Grid.aem-Grid--4 > .aem-GridColumn.aem-GridColumn--tablet--4 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--tablet--4 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 25%;
+  }
+  .aem-Grid.aem-Grid--tablet--4 > .aem-GridColumn.aem-GridColumn--tablet--2 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--tablet--4 > .aem-GridColumn.aem-GridColumn--tablet--3 {
+    float: left;
+    clear: none;
+    width: 75%;
+  }
+  .aem-Grid.aem-Grid--tablet--4 > .aem-GridColumn.aem-GridColumn--tablet--4 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--5 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 20%;
+  }
+  .aem-Grid.aem-Grid--5 > .aem-GridColumn.aem-GridColumn--tablet--2 {
+    float: left;
+    clear: none;
+    width: 40%;
+  }
+  .aem-Grid.aem-Grid--5 > .aem-GridColumn.aem-GridColumn--tablet--3 {
+    float: left;
+    clear: none;
+    width: 60%;
+  }
+  .aem-Grid.aem-Grid--5 > .aem-GridColumn.aem-GridColumn--tablet--4 {
+    float: left;
+    clear: none;
+    width: 80%;
+  }
+  .aem-Grid.aem-Grid--5 > .aem-GridColumn.aem-GridColumn--tablet--5 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--tablet--5 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 20%;
+  }
+  .aem-Grid.aem-Grid--tablet--5 > .aem-GridColumn.aem-GridColumn--tablet--2 {
+    float: left;
+    clear: none;
+    width: 40%;
+  }
+  .aem-Grid.aem-Grid--tablet--5 > .aem-GridColumn.aem-GridColumn--tablet--3 {
+    float: left;
+    clear: none;
+    width: 60%;
+  }
+  .aem-Grid.aem-Grid--tablet--5 > .aem-GridColumn.aem-GridColumn--tablet--4 {
+    float: left;
+    clear: none;
+    width: 80%;
+  }
+  .aem-Grid.aem-Grid--tablet--5 > .aem-GridColumn.aem-GridColumn--tablet--5 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--6 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 16.66666667%;
+  }
+  .aem-Grid.aem-Grid--6 > .aem-GridColumn.aem-GridColumn--tablet--2 {
+    float: left;
+    clear: none;
+    width: 33.33333333%;
+  }
+  .aem-Grid.aem-Grid--6 > .aem-GridColumn.aem-GridColumn--tablet--3 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--6 > .aem-GridColumn.aem-GridColumn--tablet--4 {
+    float: left;
+    clear: none;
+    width: 66.66666667%;
+  }
+  .aem-Grid.aem-Grid--6 > .aem-GridColumn.aem-GridColumn--tablet--5 {
+    float: left;
+    clear: none;
+    width: 83.33333333%;
+  }
+  .aem-Grid.aem-Grid--6 > .aem-GridColumn.aem-GridColumn--tablet--6 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--tablet--6 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 16.66666667%;
+  }
+  .aem-Grid.aem-Grid--tablet--6 > .aem-GridColumn.aem-GridColumn--tablet--2 {
+    float: left;
+    clear: none;
+    width: 33.33333333%;
+  }
+  .aem-Grid.aem-Grid--tablet--6 > .aem-GridColumn.aem-GridColumn--tablet--3 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--tablet--6 > .aem-GridColumn.aem-GridColumn--tablet--4 {
+    float: left;
+    clear: none;
+    width: 66.66666667%;
+  }
+  .aem-Grid.aem-Grid--tablet--6 > .aem-GridColumn.aem-GridColumn--tablet--5 {
+    float: left;
+    clear: none;
+    width: 83.33333333%;
+  }
+  .aem-Grid.aem-Grid--tablet--6 > .aem-GridColumn.aem-GridColumn--tablet--6 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--7 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 14.28571429%;
+  }
+  .aem-Grid.aem-Grid--7 > .aem-GridColumn.aem-GridColumn--tablet--2 {
+    float: left;
+    clear: none;
+    width: 28.57142857%;
+  }
+  .aem-Grid.aem-Grid--7 > .aem-GridColumn.aem-GridColumn--tablet--3 {
+    float: left;
+    clear: none;
+    width: 42.85714286%;
+  }
+  .aem-Grid.aem-Grid--7 > .aem-GridColumn.aem-GridColumn--tablet--4 {
+    float: left;
+    clear: none;
+    width: 57.14285714%;
+  }
+  .aem-Grid.aem-Grid--7 > .aem-GridColumn.aem-GridColumn--tablet--5 {
+    float: left;
+    clear: none;
+    width: 71.42857143%;
+  }
+  .aem-Grid.aem-Grid--7 > .aem-GridColumn.aem-GridColumn--tablet--6 {
+    float: left;
+    clear: none;
+    width: 85.71428571%;
+  }
+  .aem-Grid.aem-Grid--7 > .aem-GridColumn.aem-GridColumn--tablet--7 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--tablet--7 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 14.28571429%;
+  }
+  .aem-Grid.aem-Grid--tablet--7 > .aem-GridColumn.aem-GridColumn--tablet--2 {
+    float: left;
+    clear: none;
+    width: 28.57142857%;
+  }
+  .aem-Grid.aem-Grid--tablet--7 > .aem-GridColumn.aem-GridColumn--tablet--3 {
+    float: left;
+    clear: none;
+    width: 42.85714286%;
+  }
+  .aem-Grid.aem-Grid--tablet--7 > .aem-GridColumn.aem-GridColumn--tablet--4 {
+    float: left;
+    clear: none;
+    width: 57.14285714%;
+  }
+  .aem-Grid.aem-Grid--tablet--7 > .aem-GridColumn.aem-GridColumn--tablet--5 {
+    float: left;
+    clear: none;
+    width: 71.42857143%;
+  }
+  .aem-Grid.aem-Grid--tablet--7 > .aem-GridColumn.aem-GridColumn--tablet--6 {
+    float: left;
+    clear: none;
+    width: 85.71428571%;
+  }
+  .aem-Grid.aem-Grid--tablet--7 > .aem-GridColumn.aem-GridColumn--tablet--7 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 12.5%;
+  }
+  .aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--tablet--2 {
+    float: left;
+    clear: none;
+    width: 25%;
+  }
+  .aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--tablet--3 {
+    float: left;
+    clear: none;
+    width: 37.5%;
+  }
+  .aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--tablet--4 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--tablet--5 {
+    float: left;
+    clear: none;
+    width: 62.5%;
+  }
+  .aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--tablet--6 {
+    float: left;
+    clear: none;
+    width: 75%;
+  }
+  .aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--tablet--7 {
+    float: left;
+    clear: none;
+    width: 87.5%;
+  }
+  .aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--tablet--8 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--tablet--8 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 12.5%;
+  }
+  .aem-Grid.aem-Grid--tablet--8 > .aem-GridColumn.aem-GridColumn--tablet--2 {
+    float: left;
+    clear: none;
+    width: 25%;
+  }
+  .aem-Grid.aem-Grid--tablet--8 > .aem-GridColumn.aem-GridColumn--tablet--3 {
+    float: left;
+    clear: none;
+    width: 37.5%;
+  }
+  .aem-Grid.aem-Grid--tablet--8 > .aem-GridColumn.aem-GridColumn--tablet--4 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--tablet--8 > .aem-GridColumn.aem-GridColumn--tablet--5 {
+    float: left;
+    clear: none;
+    width: 62.5%;
+  }
+  .aem-Grid.aem-Grid--tablet--8 > .aem-GridColumn.aem-GridColumn--tablet--6 {
+    float: left;
+    clear: none;
+    width: 75%;
+  }
+  .aem-Grid.aem-Grid--tablet--8 > .aem-GridColumn.aem-GridColumn--tablet--7 {
+    float: left;
+    clear: none;
+    width: 87.5%;
+  }
+  .aem-Grid.aem-Grid--tablet--8 > .aem-GridColumn.aem-GridColumn--tablet--8 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 11.11111111%;
+  }
+  .aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--tablet--2 {
+    float: left;
+    clear: none;
+    width: 22.22222222%;
+  }
+  .aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--tablet--3 {
+    float: left;
+    clear: none;
+    width: 33.33333333%;
+  }
+  .aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--tablet--4 {
+    float: left;
+    clear: none;
+    width: 44.44444444%;
+  }
+  .aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--tablet--5 {
+    float: left;
+    clear: none;
+    width: 55.55555556%;
+  }
+  .aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--tablet--6 {
+    float: left;
+    clear: none;
+    width: 66.66666667%;
+  }
+  .aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--tablet--7 {
+    float: left;
+    clear: none;
+    width: 77.77777778%;
+  }
+  .aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--tablet--8 {
+    float: left;
+    clear: none;
+    width: 88.88888889%;
+  }
+  .aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--tablet--9 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--tablet--9 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 11.11111111%;
+  }
+  .aem-Grid.aem-Grid--tablet--9 > .aem-GridColumn.aem-GridColumn--tablet--2 {
+    float: left;
+    clear: none;
+    width: 22.22222222%;
+  }
+  .aem-Grid.aem-Grid--tablet--9 > .aem-GridColumn.aem-GridColumn--tablet--3 {
+    float: left;
+    clear: none;
+    width: 33.33333333%;
+  }
+  .aem-Grid.aem-Grid--tablet--9 > .aem-GridColumn.aem-GridColumn--tablet--4 {
+    float: left;
+    clear: none;
+    width: 44.44444444%;
+  }
+  .aem-Grid.aem-Grid--tablet--9 > .aem-GridColumn.aem-GridColumn--tablet--5 {
+    float: left;
+    clear: none;
+    width: 55.55555556%;
+  }
+  .aem-Grid.aem-Grid--tablet--9 > .aem-GridColumn.aem-GridColumn--tablet--6 {
+    float: left;
+    clear: none;
+    width: 66.66666667%;
+  }
+  .aem-Grid.aem-Grid--tablet--9 > .aem-GridColumn.aem-GridColumn--tablet--7 {
+    float: left;
+    clear: none;
+    width: 77.77777778%;
+  }
+  .aem-Grid.aem-Grid--tablet--9 > .aem-GridColumn.aem-GridColumn--tablet--8 {
+    float: left;
+    clear: none;
+    width: 88.88888889%;
+  }
+  .aem-Grid.aem-Grid--tablet--9 > .aem-GridColumn.aem-GridColumn--tablet--9 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 10%;
+  }
+  .aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--tablet--2 {
+    float: left;
+    clear: none;
+    width: 20%;
+  }
+  .aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--tablet--3 {
+    float: left;
+    clear: none;
+    width: 30%;
+  }
+  .aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--tablet--4 {
+    float: left;
+    clear: none;
+    width: 40%;
+  }
+  .aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--tablet--5 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--tablet--6 {
+    float: left;
+    clear: none;
+    width: 60%;
+  }
+  .aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--tablet--7 {
+    float: left;
+    clear: none;
+    width: 70%;
+  }
+  .aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--tablet--8 {
+    float: left;
+    clear: none;
+    width: 80%;
+  }
+  .aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--tablet--9 {
+    float: left;
+    clear: none;
+    width: 90%;
+  }
+  .aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--tablet--10 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--tablet--10 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 10%;
+  }
+  .aem-Grid.aem-Grid--tablet--10 > .aem-GridColumn.aem-GridColumn--tablet--2 {
+    float: left;
+    clear: none;
+    width: 20%;
+  }
+  .aem-Grid.aem-Grid--tablet--10 > .aem-GridColumn.aem-GridColumn--tablet--3 {
+    float: left;
+    clear: none;
+    width: 30%;
+  }
+  .aem-Grid.aem-Grid--tablet--10 > .aem-GridColumn.aem-GridColumn--tablet--4 {
+    float: left;
+    clear: none;
+    width: 40%;
+  }
+  .aem-Grid.aem-Grid--tablet--10 > .aem-GridColumn.aem-GridColumn--tablet--5 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--tablet--10 > .aem-GridColumn.aem-GridColumn--tablet--6 {
+    float: left;
+    clear: none;
+    width: 60%;
+  }
+  .aem-Grid.aem-Grid--tablet--10 > .aem-GridColumn.aem-GridColumn--tablet--7 {
+    float: left;
+    clear: none;
+    width: 70%;
+  }
+  .aem-Grid.aem-Grid--tablet--10 > .aem-GridColumn.aem-GridColumn--tablet--8 {
+    float: left;
+    clear: none;
+    width: 80%;
+  }
+  .aem-Grid.aem-Grid--tablet--10 > .aem-GridColumn.aem-GridColumn--tablet--9 {
+    float: left;
+    clear: none;
+    width: 90%;
+  }
+  .aem-Grid.aem-Grid--tablet--10 > .aem-GridColumn.aem-GridColumn--tablet--10 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 9.09090909%;
+  }
+  .aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--tablet--2 {
+    float: left;
+    clear: none;
+    width: 18.18181818%;
+  }
+  .aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--tablet--3 {
+    float: left;
+    clear: none;
+    width: 27.27272727%;
+  }
+  .aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--tablet--4 {
+    float: left;
+    clear: none;
+    width: 36.36363636%;
+  }
+  .aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--tablet--5 {
+    float: left;
+    clear: none;
+    width: 45.45454545%;
+  }
+  .aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--tablet--6 {
+    float: left;
+    clear: none;
+    width: 54.54545455%;
+  }
+  .aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--tablet--7 {
+    float: left;
+    clear: none;
+    width: 63.63636364%;
+  }
+  .aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--tablet--8 {
+    float: left;
+    clear: none;
+    width: 72.72727273%;
+  }
+  .aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--tablet--9 {
+    float: left;
+    clear: none;
+    width: 81.81818182%;
+  }
+  .aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--tablet--10 {
+    float: left;
+    clear: none;
+    width: 90.90909091%;
+  }
+  .aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--tablet--11 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--tablet--11 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 9.09090909%;
+  }
+  .aem-Grid.aem-Grid--tablet--11 > .aem-GridColumn.aem-GridColumn--tablet--2 {
+    float: left;
+    clear: none;
+    width: 18.18181818%;
+  }
+  .aem-Grid.aem-Grid--tablet--11 > .aem-GridColumn.aem-GridColumn--tablet--3 {
+    float: left;
+    clear: none;
+    width: 27.27272727%;
+  }
+  .aem-Grid.aem-Grid--tablet--11 > .aem-GridColumn.aem-GridColumn--tablet--4 {
+    float: left;
+    clear: none;
+    width: 36.36363636%;
+  }
+  .aem-Grid.aem-Grid--tablet--11 > .aem-GridColumn.aem-GridColumn--tablet--5 {
+    float: left;
+    clear: none;
+    width: 45.45454545%;
+  }
+  .aem-Grid.aem-Grid--tablet--11 > .aem-GridColumn.aem-GridColumn--tablet--6 {
+    float: left;
+    clear: none;
+    width: 54.54545455%;
+  }
+  .aem-Grid.aem-Grid--tablet--11 > .aem-GridColumn.aem-GridColumn--tablet--7 {
+    float: left;
+    clear: none;
+    width: 63.63636364%;
+  }
+  .aem-Grid.aem-Grid--tablet--11 > .aem-GridColumn.aem-GridColumn--tablet--8 {
+    float: left;
+    clear: none;
+    width: 72.72727273%;
+  }
+  .aem-Grid.aem-Grid--tablet--11 > .aem-GridColumn.aem-GridColumn--tablet--9 {
+    float: left;
+    clear: none;
+    width: 81.81818182%;
+  }
+  .aem-Grid.aem-Grid--tablet--11 > .aem-GridColumn.aem-GridColumn--tablet--10 {
+    float: left;
+    clear: none;
+    width: 90.90909091%;
+  }
+  .aem-Grid.aem-Grid--tablet--11 > .aem-GridColumn.aem-GridColumn--tablet--11 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 8.33333333%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--tablet--2 {
+    float: left;
+    clear: none;
+    width: 16.66666667%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--tablet--3 {
+    float: left;
+    clear: none;
+    width: 25%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--tablet--4 {
+    float: left;
+    clear: none;
+    width: 33.33333333%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--tablet--5 {
+    float: left;
+    clear: none;
+    width: 41.66666667%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--tablet--6 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--tablet--7 {
+    float: left;
+    clear: none;
+    width: 58.33333333%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--tablet--8 {
+    float: left;
+    clear: none;
+    width: 66.66666667%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--tablet--9 {
+    float: left;
+    clear: none;
+    width: 75%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--tablet--10 {
+    float: left;
+    clear: none;
+    width: 83.33333333%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--tablet--11 {
+    float: left;
+    clear: none;
+    width: 91.66666667%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--tablet--12 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--tablet--12 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 8.33333333%;
+  }
+  .aem-Grid.aem-Grid--tablet--12 > .aem-GridColumn.aem-GridColumn--tablet--2 {
+    float: left;
+    clear: none;
+    width: 16.66666667%;
+  }
+  .aem-Grid.aem-Grid--tablet--12 > .aem-GridColumn.aem-GridColumn--tablet--3 {
+    float: left;
+    clear: none;
+    width: 25%;
+  }
+  .aem-Grid.aem-Grid--tablet--12 > .aem-GridColumn.aem-GridColumn--tablet--4 {
+    float: left;
+    clear: none;
+    width: 33.33333333%;
+  }
+  .aem-Grid.aem-Grid--tablet--12 > .aem-GridColumn.aem-GridColumn--tablet--5 {
+    float: left;
+    clear: none;
+    width: 41.66666667%;
+  }
+  .aem-Grid.aem-Grid--tablet--12 > .aem-GridColumn.aem-GridColumn--tablet--6 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--tablet--12 > .aem-GridColumn.aem-GridColumn--tablet--7 {
+    float: left;
+    clear: none;
+    width: 58.33333333%;
+  }
+  .aem-Grid.aem-Grid--tablet--12 > .aem-GridColumn.aem-GridColumn--tablet--8 {
+    float: left;
+    clear: none;
+    width: 66.66666667%;
+  }
+  .aem-Grid.aem-Grid--tablet--12 > .aem-GridColumn.aem-GridColumn--tablet--9 {
+    float: left;
+    clear: none;
+    width: 75%;
+  }
+  .aem-Grid.aem-Grid--tablet--12 > .aem-GridColumn.aem-GridColumn--tablet--10 {
+    float: left;
+    clear: none;
+    width: 83.33333333%;
+  }
+  .aem-Grid.aem-Grid--tablet--12 > .aem-GridColumn.aem-GridColumn--tablet--11 {
+    float: left;
+    clear: none;
+    width: 91.66666667%;
+  }
+  .aem-Grid.aem-Grid--tablet--12 > .aem-GridColumn.aem-GridColumn--tablet--12 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid > .aem-GridColumn.aem-GridColumn--tablet--newline {
+    /* newline behavior */
+    clear: both !important;
+  }
+  .aem-Grid > .aem-GridColumn.aem-GridColumn--tablet--hide {
+    /* hide behavior */
+    display: none;
+  }
+}
+
+/* maximum amount of grid cells to be provided */
+/* example configuration */
+/* default breakpoint */
+.aem-Grid.aem-Grid--1 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--default--1 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--2 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 50%;
+}
+
+.aem-Grid.aem-Grid--2 > .aem-GridColumn.aem-GridColumn--default--2 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--default--2 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 50%;
+}
+
+.aem-Grid.aem-Grid--default--2 > .aem-GridColumn.aem-GridColumn--default--2 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--3 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 33.33333333%;
+}
+
+.aem-Grid.aem-Grid--3 > .aem-GridColumn.aem-GridColumn--default--2 {
+  float: left;
+  clear: none;
+  width: 66.66666667%;
+}
+
+.aem-Grid.aem-Grid--3 > .aem-GridColumn.aem-GridColumn--default--3 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--default--3 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 33.33333333%;
+}
+
+.aem-Grid.aem-Grid--default--3 > .aem-GridColumn.aem-GridColumn--default--2 {
+  float: left;
+  clear: none;
+  width: 66.66666667%;
+}
+
+.aem-Grid.aem-Grid--default--3 > .aem-GridColumn.aem-GridColumn--default--3 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--4 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 25%;
+}
+
+.aem-Grid.aem-Grid--4 > .aem-GridColumn.aem-GridColumn--default--2 {
+  float: left;
+  clear: none;
+  width: 50%;
+}
+
+.aem-Grid.aem-Grid--4 > .aem-GridColumn.aem-GridColumn--default--3 {
+  float: left;
+  clear: none;
+  width: 75%;
+}
+
+.aem-Grid.aem-Grid--4 > .aem-GridColumn.aem-GridColumn--default--4 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--default--4 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 25%;
+}
+
+.aem-Grid.aem-Grid--default--4 > .aem-GridColumn.aem-GridColumn--default--2 {
+  float: left;
+  clear: none;
+  width: 50%;
+}
+
+.aem-Grid.aem-Grid--default--4 > .aem-GridColumn.aem-GridColumn--default--3 {
+  float: left;
+  clear: none;
+  width: 75%;
+}
+
+.aem-Grid.aem-Grid--default--4 > .aem-GridColumn.aem-GridColumn--default--4 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--5 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 20%;
+}
+
+.aem-Grid.aem-Grid--5 > .aem-GridColumn.aem-GridColumn--default--2 {
+  float: left;
+  clear: none;
+  width: 40%;
+}
+
+.aem-Grid.aem-Grid--5 > .aem-GridColumn.aem-GridColumn--default--3 {
+  float: left;
+  clear: none;
+  width: 60%;
+}
+
+.aem-Grid.aem-Grid--5 > .aem-GridColumn.aem-GridColumn--default--4 {
+  float: left;
+  clear: none;
+  width: 80%;
+}
+
+.aem-Grid.aem-Grid--5 > .aem-GridColumn.aem-GridColumn--default--5 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--default--5 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 20%;
+}
+
+.aem-Grid.aem-Grid--default--5 > .aem-GridColumn.aem-GridColumn--default--2 {
+  float: left;
+  clear: none;
+  width: 40%;
+}
+
+.aem-Grid.aem-Grid--default--5 > .aem-GridColumn.aem-GridColumn--default--3 {
+  float: left;
+  clear: none;
+  width: 60%;
+}
+
+.aem-Grid.aem-Grid--default--5 > .aem-GridColumn.aem-GridColumn--default--4 {
+  float: left;
+  clear: none;
+  width: 80%;
+}
+
+.aem-Grid.aem-Grid--default--5 > .aem-GridColumn.aem-GridColumn--default--5 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--6 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 16.66666667%;
+}
+
+.aem-Grid.aem-Grid--6 > .aem-GridColumn.aem-GridColumn--default--2 {
+  float: left;
+  clear: none;
+  width: 33.33333333%;
+}
+
+.aem-Grid.aem-Grid--6 > .aem-GridColumn.aem-GridColumn--default--3 {
+  float: left;
+  clear: none;
+  width: 50%;
+}
+
+.aem-Grid.aem-Grid--6 > .aem-GridColumn.aem-GridColumn--default--4 {
+  float: left;
+  clear: none;
+  width: 66.66666667%;
+}
+
+.aem-Grid.aem-Grid--6 > .aem-GridColumn.aem-GridColumn--default--5 {
+  float: left;
+  clear: none;
+  width: 83.33333333%;
+}
+
+.aem-Grid.aem-Grid--6 > .aem-GridColumn.aem-GridColumn--default--6 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--default--6 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 16.66666667%;
+}
+
+.aem-Grid.aem-Grid--default--6 > .aem-GridColumn.aem-GridColumn--default--2 {
+  float: left;
+  clear: none;
+  width: 33.33333333%;
+}
+
+.aem-Grid.aem-Grid--default--6 > .aem-GridColumn.aem-GridColumn--default--3 {
+  float: left;
+  clear: none;
+  width: 50%;
+}
+
+.aem-Grid.aem-Grid--default--6 > .aem-GridColumn.aem-GridColumn--default--4 {
+  float: left;
+  clear: none;
+  width: 66.66666667%;
+}
+
+.aem-Grid.aem-Grid--default--6 > .aem-GridColumn.aem-GridColumn--default--5 {
+  float: left;
+  clear: none;
+  width: 83.33333333%;
+}
+
+.aem-Grid.aem-Grid--default--6 > .aem-GridColumn.aem-GridColumn--default--6 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--7 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 14.28571429%;
+}
+
+.aem-Grid.aem-Grid--7 > .aem-GridColumn.aem-GridColumn--default--2 {
+  float: left;
+  clear: none;
+  width: 28.57142857%;
+}
+
+.aem-Grid.aem-Grid--7 > .aem-GridColumn.aem-GridColumn--default--3 {
+  float: left;
+  clear: none;
+  width: 42.85714286%;
+}
+
+.aem-Grid.aem-Grid--7 > .aem-GridColumn.aem-GridColumn--default--4 {
+  float: left;
+  clear: none;
+  width: 57.14285714%;
+}
+
+.aem-Grid.aem-Grid--7 > .aem-GridColumn.aem-GridColumn--default--5 {
+  float: left;
+  clear: none;
+  width: 71.42857143%;
+}
+
+.aem-Grid.aem-Grid--7 > .aem-GridColumn.aem-GridColumn--default--6 {
+  float: left;
+  clear: none;
+  width: 85.71428571%;
+}
+
+.aem-Grid.aem-Grid--7 > .aem-GridColumn.aem-GridColumn--default--7 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--default--7 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 14.28571429%;
+}
+
+.aem-Grid.aem-Grid--default--7 > .aem-GridColumn.aem-GridColumn--default--2 {
+  float: left;
+  clear: none;
+  width: 28.57142857%;
+}
+
+.aem-Grid.aem-Grid--default--7 > .aem-GridColumn.aem-GridColumn--default--3 {
+  float: left;
+  clear: none;
+  width: 42.85714286%;
+}
+
+.aem-Grid.aem-Grid--default--7 > .aem-GridColumn.aem-GridColumn--default--4 {
+  float: left;
+  clear: none;
+  width: 57.14285714%;
+}
+
+.aem-Grid.aem-Grid--default--7 > .aem-GridColumn.aem-GridColumn--default--5 {
+  float: left;
+  clear: none;
+  width: 71.42857143%;
+}
+
+.aem-Grid.aem-Grid--default--7 > .aem-GridColumn.aem-GridColumn--default--6 {
+  float: left;
+  clear: none;
+  width: 85.71428571%;
+}
+
+.aem-Grid.aem-Grid--default--7 > .aem-GridColumn.aem-GridColumn--default--7 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 12.5%;
+}
+
+.aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--default--2 {
+  float: left;
+  clear: none;
+  width: 25%;
+}
+
+.aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--default--3 {
+  float: left;
+  clear: none;
+  width: 37.5%;
+}
+
+.aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--default--4 {
+  float: left;
+  clear: none;
+  width: 50%;
+}
+
+.aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--default--5 {
+  float: left;
+  clear: none;
+  width: 62.5%;
+}
+
+.aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--default--6 {
+  float: left;
+  clear: none;
+  width: 75%;
+}
+
+.aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--default--7 {
+  float: left;
+  clear: none;
+  width: 87.5%;
+}
+
+.aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--default--8 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--default--8 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 12.5%;
+}
+
+.aem-Grid.aem-Grid--default--8 > .aem-GridColumn.aem-GridColumn--default--2 {
+  float: left;
+  clear: none;
+  width: 25%;
+}
+
+.aem-Grid.aem-Grid--default--8 > .aem-GridColumn.aem-GridColumn--default--3 {
+  float: left;
+  clear: none;
+  width: 37.5%;
+}
+
+.aem-Grid.aem-Grid--default--8 > .aem-GridColumn.aem-GridColumn--default--4 {
+  float: left;
+  clear: none;
+  width: 50%;
+}
+
+.aem-Grid.aem-Grid--default--8 > .aem-GridColumn.aem-GridColumn--default--5 {
+  float: left;
+  clear: none;
+  width: 62.5%;
+}
+
+.aem-Grid.aem-Grid--default--8 > .aem-GridColumn.aem-GridColumn--default--6 {
+  float: left;
+  clear: none;
+  width: 75%;
+}
+
+.aem-Grid.aem-Grid--default--8 > .aem-GridColumn.aem-GridColumn--default--7 {
+  float: left;
+  clear: none;
+  width: 87.5%;
+}
+
+.aem-Grid.aem-Grid--default--8 > .aem-GridColumn.aem-GridColumn--default--8 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 11.11111111%;
+}
+
+.aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--default--2 {
+  float: left;
+  clear: none;
+  width: 22.22222222%;
+}
+
+.aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--default--3 {
+  float: left;
+  clear: none;
+  width: 33.33333333%;
+}
+
+.aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--default--4 {
+  float: left;
+  clear: none;
+  width: 44.44444444%;
+}
+
+.aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--default--5 {
+  float: left;
+  clear: none;
+  width: 55.55555556%;
+}
+
+.aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--default--6 {
+  float: left;
+  clear: none;
+  width: 66.66666667%;
+}
+
+.aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--default--7 {
+  float: left;
+  clear: none;
+  width: 77.77777778%;
+}
+
+.aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--default--8 {
+  float: left;
+  clear: none;
+  width: 88.88888889%;
+}
+
+.aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--default--9 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--default--9 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 11.11111111%;
+}
+
+.aem-Grid.aem-Grid--default--9 > .aem-GridColumn.aem-GridColumn--default--2 {
+  float: left;
+  clear: none;
+  width: 22.22222222%;
+}
+
+.aem-Grid.aem-Grid--default--9 > .aem-GridColumn.aem-GridColumn--default--3 {
+  float: left;
+  clear: none;
+  width: 33.33333333%;
+}
+
+.aem-Grid.aem-Grid--default--9 > .aem-GridColumn.aem-GridColumn--default--4 {
+  float: left;
+  clear: none;
+  width: 44.44444444%;
+}
+
+.aem-Grid.aem-Grid--default--9 > .aem-GridColumn.aem-GridColumn--default--5 {
+  float: left;
+  clear: none;
+  width: 55.55555556%;
+}
+
+.aem-Grid.aem-Grid--default--9 > .aem-GridColumn.aem-GridColumn--default--6 {
+  float: left;
+  clear: none;
+  width: 66.66666667%;
+}
+
+.aem-Grid.aem-Grid--default--9 > .aem-GridColumn.aem-GridColumn--default--7 {
+  float: left;
+  clear: none;
+  width: 77.77777778%;
+}
+
+.aem-Grid.aem-Grid--default--9 > .aem-GridColumn.aem-GridColumn--default--8 {
+  float: left;
+  clear: none;
+  width: 88.88888889%;
+}
+
+.aem-Grid.aem-Grid--default--9 > .aem-GridColumn.aem-GridColumn--default--9 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 10%;
+}
+
+.aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--default--2 {
+  float: left;
+  clear: none;
+  width: 20%;
+}
+
+.aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--default--3 {
+  float: left;
+  clear: none;
+  width: 30%;
+}
+
+.aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--default--4 {
+  float: left;
+  clear: none;
+  width: 40%;
+}
+
+.aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--default--5 {
+  float: left;
+  clear: none;
+  width: 50%;
+}
+
+.aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--default--6 {
+  float: left;
+  clear: none;
+  width: 60%;
+}
+
+.aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--default--7 {
+  float: left;
+  clear: none;
+  width: 70%;
+}
+
+.aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--default--8 {
+  float: left;
+  clear: none;
+  width: 80%;
+}
+
+.aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--default--9 {
+  float: left;
+  clear: none;
+  width: 90%;
+}
+
+.aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--default--10 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--default--10 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 10%;
+}
+
+.aem-Grid.aem-Grid--default--10 > .aem-GridColumn.aem-GridColumn--default--2 {
+  float: left;
+  clear: none;
+  width: 20%;
+}
+
+.aem-Grid.aem-Grid--default--10 > .aem-GridColumn.aem-GridColumn--default--3 {
+  float: left;
+  clear: none;
+  width: 30%;
+}
+
+.aem-Grid.aem-Grid--default--10 > .aem-GridColumn.aem-GridColumn--default--4 {
+  float: left;
+  clear: none;
+  width: 40%;
+}
+
+.aem-Grid.aem-Grid--default--10 > .aem-GridColumn.aem-GridColumn--default--5 {
+  float: left;
+  clear: none;
+  width: 50%;
+}
+
+.aem-Grid.aem-Grid--default--10 > .aem-GridColumn.aem-GridColumn--default--6 {
+  float: left;
+  clear: none;
+  width: 60%;
+}
+
+.aem-Grid.aem-Grid--default--10 > .aem-GridColumn.aem-GridColumn--default--7 {
+  float: left;
+  clear: none;
+  width: 70%;
+}
+
+.aem-Grid.aem-Grid--default--10 > .aem-GridColumn.aem-GridColumn--default--8 {
+  float: left;
+  clear: none;
+  width: 80%;
+}
+
+.aem-Grid.aem-Grid--default--10 > .aem-GridColumn.aem-GridColumn--default--9 {
+  float: left;
+  clear: none;
+  width: 90%;
+}
+
+.aem-Grid.aem-Grid--default--10 > .aem-GridColumn.aem-GridColumn--default--10 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 9.09090909%;
+}
+
+.aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--default--2 {
+  float: left;
+  clear: none;
+  width: 18.18181818%;
+}
+
+.aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--default--3 {
+  float: left;
+  clear: none;
+  width: 27.27272727%;
+}
+
+.aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--default--4 {
+  float: left;
+  clear: none;
+  width: 36.36363636%;
+}
+
+.aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--default--5 {
+  float: left;
+  clear: none;
+  width: 45.45454545%;
+}
+
+.aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--default--6 {
+  float: left;
+  clear: none;
+  width: 54.54545455%;
+}
+
+.aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--default--7 {
+  float: left;
+  clear: none;
+  width: 63.63636364%;
+}
+
+.aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--default--8 {
+  float: left;
+  clear: none;
+  width: 72.72727273%;
+}
+
+.aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--default--9 {
+  float: left;
+  clear: none;
+  width: 81.81818182%;
+}
+
+.aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--default--10 {
+  float: left;
+  clear: none;
+  width: 90.90909091%;
+}
+
+.aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--default--11 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--default--11 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 9.09090909%;
+}
+
+.aem-Grid.aem-Grid--default--11 > .aem-GridColumn.aem-GridColumn--default--2 {
+  float: left;
+  clear: none;
+  width: 18.18181818%;
+}
+
+.aem-Grid.aem-Grid--default--11 > .aem-GridColumn.aem-GridColumn--default--3 {
+  float: left;
+  clear: none;
+  width: 27.27272727%;
+}
+
+.aem-Grid.aem-Grid--default--11 > .aem-GridColumn.aem-GridColumn--default--4 {
+  float: left;
+  clear: none;
+  width: 36.36363636%;
+}
+
+.aem-Grid.aem-Grid--default--11 > .aem-GridColumn.aem-GridColumn--default--5 {
+  float: left;
+  clear: none;
+  width: 45.45454545%;
+}
+
+.aem-Grid.aem-Grid--default--11 > .aem-GridColumn.aem-GridColumn--default--6 {
+  float: left;
+  clear: none;
+  width: 54.54545455%;
+}
+
+.aem-Grid.aem-Grid--default--11 > .aem-GridColumn.aem-GridColumn--default--7 {
+  float: left;
+  clear: none;
+  width: 63.63636364%;
+}
+
+.aem-Grid.aem-Grid--default--11 > .aem-GridColumn.aem-GridColumn--default--8 {
+  float: left;
+  clear: none;
+  width: 72.72727273%;
+}
+
+.aem-Grid.aem-Grid--default--11 > .aem-GridColumn.aem-GridColumn--default--9 {
+  float: left;
+  clear: none;
+  width: 81.81818182%;
+}
+
+.aem-Grid.aem-Grid--default--11 > .aem-GridColumn.aem-GridColumn--default--10 {
+  float: left;
+  clear: none;
+  width: 90.90909091%;
+}
+
+.aem-Grid.aem-Grid--default--11 > .aem-GridColumn.aem-GridColumn--default--11 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 8.33333333%;
+}
+
+.aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--default--2 {
+  float: left;
+  clear: none;
+  width: 16.66666667%;
+}
+
+.aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--default--3 {
+  float: left;
+  clear: none;
+  width: 25%;
+}
+
+.aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--default--4 {
+  float: left;
+  clear: none;
+  width: 33.33333333%;
+}
+
+.aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--default--5 {
+  float: left;
+  clear: none;
+  width: 41.66666667%;
+}
+
+.aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--default--6 {
+  float: left;
+  clear: none;
+  width: 50%;
+}
+
+.aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--default--7 {
+  float: left;
+  clear: none;
+  width: 58.33333333%;
+}
+
+.aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--default--8 {
+  float: left;
+  clear: none;
+  width: 66.66666667%;
+}
+
+.aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--default--9 {
+  float: left;
+  clear: none;
+  width: 75%;
+}
+
+.aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--default--10 {
+  float: left;
+  clear: none;
+  width: 83.33333333%;
+}
+
+.aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--default--11 {
+  float: left;
+  clear: none;
+  width: 91.66666667%;
+}
+
+.aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--default--12 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--default--12 > .aem-GridColumn.aem-GridColumn--default--1 {
+  float: left;
+  clear: none;
+  width: 8.33333333%;
+}
+
+.aem-Grid.aem-Grid--default--12 > .aem-GridColumn.aem-GridColumn--default--2 {
+  float: left;
+  clear: none;
+  width: 16.66666667%;
+}
+
+.aem-Grid.aem-Grid--default--12 > .aem-GridColumn.aem-GridColumn--default--3 {
+  float: left;
+  clear: none;
+  width: 25%;
+}
+
+.aem-Grid.aem-Grid--default--12 > .aem-GridColumn.aem-GridColumn--default--4 {
+  float: left;
+  clear: none;
+  width: 33.33333333%;
+}
+
+.aem-Grid.aem-Grid--default--12 > .aem-GridColumn.aem-GridColumn--default--5 {
+  float: left;
+  clear: none;
+  width: 41.66666667%;
+}
+
+.aem-Grid.aem-Grid--default--12 > .aem-GridColumn.aem-GridColumn--default--6 {
+  float: left;
+  clear: none;
+  width: 50%;
+}
+
+.aem-Grid.aem-Grid--default--12 > .aem-GridColumn.aem-GridColumn--default--7 {
+  float: left;
+  clear: none;
+  width: 58.33333333%;
+}
+
+.aem-Grid.aem-Grid--default--12 > .aem-GridColumn.aem-GridColumn--default--8 {
+  float: left;
+  clear: none;
+  width: 66.66666667%;
+}
+
+.aem-Grid.aem-Grid--default--12 > .aem-GridColumn.aem-GridColumn--default--9 {
+  float: left;
+  clear: none;
+  width: 75%;
+}
+
+.aem-Grid.aem-Grid--default--12 > .aem-GridColumn.aem-GridColumn--default--10 {
+  float: left;
+  clear: none;
+  width: 83.33333333%;
+}
+
+.aem-Grid.aem-Grid--default--12 > .aem-GridColumn.aem-GridColumn--default--11 {
+  float: left;
+  clear: none;
+  width: 91.66666667%;
+}
+
+.aem-Grid.aem-Grid--default--12 > .aem-GridColumn.aem-GridColumn--default--12 {
+  float: left;
+  clear: none;
+  width: 100%;
+}
+
+.aem-Grid > .aem-GridColumn.aem-GridColumn--default--newline {
+  /* newline behavior */
+  clear: both !important;
+}
+
+.aem-Grid > .aem-GridColumn.aem-GridColumn--default--hide {
+  /* hide behavior */
+  display: none;
+}
+
+/* phone breakpoint */
+@media (max-width: 768px) {
+  .aem-Grid.aem-Grid--1 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--phone--1 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--2 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--2 > .aem-GridColumn.aem-GridColumn--phone--2 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--phone--2 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--phone--2 > .aem-GridColumn.aem-GridColumn--phone--2 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--3 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 33.33333333%;
+  }
+  .aem-Grid.aem-Grid--3 > .aem-GridColumn.aem-GridColumn--phone--2 {
+    float: left;
+    clear: none;
+    width: 66.66666667%;
+  }
+  .aem-Grid.aem-Grid--3 > .aem-GridColumn.aem-GridColumn--phone--3 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--phone--3 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 33.33333333%;
+  }
+  .aem-Grid.aem-Grid--phone--3 > .aem-GridColumn.aem-GridColumn--phone--2 {
+    float: left;
+    clear: none;
+    width: 66.66666667%;
+  }
+  .aem-Grid.aem-Grid--phone--3 > .aem-GridColumn.aem-GridColumn--phone--3 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--4 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 25%;
+  }
+  .aem-Grid.aem-Grid--4 > .aem-GridColumn.aem-GridColumn--phone--2 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--4 > .aem-GridColumn.aem-GridColumn--phone--3 {
+    float: left;
+    clear: none;
+    width: 75%;
+  }
+  .aem-Grid.aem-Grid--4 > .aem-GridColumn.aem-GridColumn--phone--4 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--phone--4 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 25%;
+  }
+  .aem-Grid.aem-Grid--phone--4 > .aem-GridColumn.aem-GridColumn--phone--2 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--phone--4 > .aem-GridColumn.aem-GridColumn--phone--3 {
+    float: left;
+    clear: none;
+    width: 75%;
+  }
+  .aem-Grid.aem-Grid--phone--4 > .aem-GridColumn.aem-GridColumn--phone--4 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--5 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 20%;
+  }
+  .aem-Grid.aem-Grid--5 > .aem-GridColumn.aem-GridColumn--phone--2 {
+    float: left;
+    clear: none;
+    width: 40%;
+  }
+  .aem-Grid.aem-Grid--5 > .aem-GridColumn.aem-GridColumn--phone--3 {
+    float: left;
+    clear: none;
+    width: 60%;
+  }
+  .aem-Grid.aem-Grid--5 > .aem-GridColumn.aem-GridColumn--phone--4 {
+    float: left;
+    clear: none;
+    width: 80%;
+  }
+  .aem-Grid.aem-Grid--5 > .aem-GridColumn.aem-GridColumn--phone--5 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--phone--5 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 20%;
+  }
+  .aem-Grid.aem-Grid--phone--5 > .aem-GridColumn.aem-GridColumn--phone--2 {
+    float: left;
+    clear: none;
+    width: 40%;
+  }
+  .aem-Grid.aem-Grid--phone--5 > .aem-GridColumn.aem-GridColumn--phone--3 {
+    float: left;
+    clear: none;
+    width: 60%;
+  }
+  .aem-Grid.aem-Grid--phone--5 > .aem-GridColumn.aem-GridColumn--phone--4 {
+    float: left;
+    clear: none;
+    width: 80%;
+  }
+  .aem-Grid.aem-Grid--phone--5 > .aem-GridColumn.aem-GridColumn--phone--5 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--6 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 16.66666667%;
+  }
+  .aem-Grid.aem-Grid--6 > .aem-GridColumn.aem-GridColumn--phone--2 {
+    float: left;
+    clear: none;
+    width: 33.33333333%;
+  }
+  .aem-Grid.aem-Grid--6 > .aem-GridColumn.aem-GridColumn--phone--3 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--6 > .aem-GridColumn.aem-GridColumn--phone--4 {
+    float: left;
+    clear: none;
+    width: 66.66666667%;
+  }
+  .aem-Grid.aem-Grid--6 > .aem-GridColumn.aem-GridColumn--phone--5 {
+    float: left;
+    clear: none;
+    width: 83.33333333%;
+  }
+  .aem-Grid.aem-Grid--6 > .aem-GridColumn.aem-GridColumn--phone--6 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--phone--6 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 16.66666667%;
+  }
+  .aem-Grid.aem-Grid--phone--6 > .aem-GridColumn.aem-GridColumn--phone--2 {
+    float: left;
+    clear: none;
+    width: 33.33333333%;
+  }
+  .aem-Grid.aem-Grid--phone--6 > .aem-GridColumn.aem-GridColumn--phone--3 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--phone--6 > .aem-GridColumn.aem-GridColumn--phone--4 {
+    float: left;
+    clear: none;
+    width: 66.66666667%;
+  }
+  .aem-Grid.aem-Grid--phone--6 > .aem-GridColumn.aem-GridColumn--phone--5 {
+    float: left;
+    clear: none;
+    width: 83.33333333%;
+  }
+  .aem-Grid.aem-Grid--phone--6 > .aem-GridColumn.aem-GridColumn--phone--6 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--7 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 14.28571429%;
+  }
+  .aem-Grid.aem-Grid--7 > .aem-GridColumn.aem-GridColumn--phone--2 {
+    float: left;
+    clear: none;
+    width: 28.57142857%;
+  }
+  .aem-Grid.aem-Grid--7 > .aem-GridColumn.aem-GridColumn--phone--3 {
+    float: left;
+    clear: none;
+    width: 42.85714286%;
+  }
+  .aem-Grid.aem-Grid--7 > .aem-GridColumn.aem-GridColumn--phone--4 {
+    float: left;
+    clear: none;
+    width: 57.14285714%;
+  }
+  .aem-Grid.aem-Grid--7 > .aem-GridColumn.aem-GridColumn--phone--5 {
+    float: left;
+    clear: none;
+    width: 71.42857143%;
+  }
+  .aem-Grid.aem-Grid--7 > .aem-GridColumn.aem-GridColumn--phone--6 {
+    float: left;
+    clear: none;
+    width: 85.71428571%;
+  }
+  .aem-Grid.aem-Grid--7 > .aem-GridColumn.aem-GridColumn--phone--7 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--phone--7 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 14.28571429%;
+  }
+  .aem-Grid.aem-Grid--phone--7 > .aem-GridColumn.aem-GridColumn--phone--2 {
+    float: left;
+    clear: none;
+    width: 28.57142857%;
+  }
+  .aem-Grid.aem-Grid--phone--7 > .aem-GridColumn.aem-GridColumn--phone--3 {
+    float: left;
+    clear: none;
+    width: 42.85714286%;
+  }
+  .aem-Grid.aem-Grid--phone--7 > .aem-GridColumn.aem-GridColumn--phone--4 {
+    float: left;
+    clear: none;
+    width: 57.14285714%;
+  }
+  .aem-Grid.aem-Grid--phone--7 > .aem-GridColumn.aem-GridColumn--phone--5 {
+    float: left;
+    clear: none;
+    width: 71.42857143%;
+  }
+  .aem-Grid.aem-Grid--phone--7 > .aem-GridColumn.aem-GridColumn--phone--6 {
+    float: left;
+    clear: none;
+    width: 85.71428571%;
+  }
+  .aem-Grid.aem-Grid--phone--7 > .aem-GridColumn.aem-GridColumn--phone--7 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 12.5%;
+  }
+  .aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--phone--2 {
+    float: left;
+    clear: none;
+    width: 25%;
+  }
+  .aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--phone--3 {
+    float: left;
+    clear: none;
+    width: 37.5%;
+  }
+  .aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--phone--4 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--phone--5 {
+    float: left;
+    clear: none;
+    width: 62.5%;
+  }
+  .aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--phone--6 {
+    float: left;
+    clear: none;
+    width: 75%;
+  }
+  .aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--phone--7 {
+    float: left;
+    clear: none;
+    width: 87.5%;
+  }
+  .aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--phone--8 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--phone--8 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 12.5%;
+  }
+  .aem-Grid.aem-Grid--phone--8 > .aem-GridColumn.aem-GridColumn--phone--2 {
+    float: left;
+    clear: none;
+    width: 25%;
+  }
+  .aem-Grid.aem-Grid--phone--8 > .aem-GridColumn.aem-GridColumn--phone--3 {
+    float: left;
+    clear: none;
+    width: 37.5%;
+  }
+  .aem-Grid.aem-Grid--phone--8 > .aem-GridColumn.aem-GridColumn--phone--4 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--phone--8 > .aem-GridColumn.aem-GridColumn--phone--5 {
+    float: left;
+    clear: none;
+    width: 62.5%;
+  }
+  .aem-Grid.aem-Grid--phone--8 > .aem-GridColumn.aem-GridColumn--phone--6 {
+    float: left;
+    clear: none;
+    width: 75%;
+  }
+  .aem-Grid.aem-Grid--phone--8 > .aem-GridColumn.aem-GridColumn--phone--7 {
+    float: left;
+    clear: none;
+    width: 87.5%;
+  }
+  .aem-Grid.aem-Grid--phone--8 > .aem-GridColumn.aem-GridColumn--phone--8 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 11.11111111%;
+  }
+  .aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--phone--2 {
+    float: left;
+    clear: none;
+    width: 22.22222222%;
+  }
+  .aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--phone--3 {
+    float: left;
+    clear: none;
+    width: 33.33333333%;
+  }
+  .aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--phone--4 {
+    float: left;
+    clear: none;
+    width: 44.44444444%;
+  }
+  .aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--phone--5 {
+    float: left;
+    clear: none;
+    width: 55.55555556%;
+  }
+  .aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--phone--6 {
+    float: left;
+    clear: none;
+    width: 66.66666667%;
+  }
+  .aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--phone--7 {
+    float: left;
+    clear: none;
+    width: 77.77777778%;
+  }
+  .aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--phone--8 {
+    float: left;
+    clear: none;
+    width: 88.88888889%;
+  }
+  .aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--phone--9 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--phone--9 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 11.11111111%;
+  }
+  .aem-Grid.aem-Grid--phone--9 > .aem-GridColumn.aem-GridColumn--phone--2 {
+    float: left;
+    clear: none;
+    width: 22.22222222%;
+  }
+  .aem-Grid.aem-Grid--phone--9 > .aem-GridColumn.aem-GridColumn--phone--3 {
+    float: left;
+    clear: none;
+    width: 33.33333333%;
+  }
+  .aem-Grid.aem-Grid--phone--9 > .aem-GridColumn.aem-GridColumn--phone--4 {
+    float: left;
+    clear: none;
+    width: 44.44444444%;
+  }
+  .aem-Grid.aem-Grid--phone--9 > .aem-GridColumn.aem-GridColumn--phone--5 {
+    float: left;
+    clear: none;
+    width: 55.55555556%;
+  }
+  .aem-Grid.aem-Grid--phone--9 > .aem-GridColumn.aem-GridColumn--phone--6 {
+    float: left;
+    clear: none;
+    width: 66.66666667%;
+  }
+  .aem-Grid.aem-Grid--phone--9 > .aem-GridColumn.aem-GridColumn--phone--7 {
+    float: left;
+    clear: none;
+    width: 77.77777778%;
+  }
+  .aem-Grid.aem-Grid--phone--9 > .aem-GridColumn.aem-GridColumn--phone--8 {
+    float: left;
+    clear: none;
+    width: 88.88888889%;
+  }
+  .aem-Grid.aem-Grid--phone--9 > .aem-GridColumn.aem-GridColumn--phone--9 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 10%;
+  }
+  .aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--phone--2 {
+    float: left;
+    clear: none;
+    width: 20%;
+  }
+  .aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--phone--3 {
+    float: left;
+    clear: none;
+    width: 30%;
+  }
+  .aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--phone--4 {
+    float: left;
+    clear: none;
+    width: 40%;
+  }
+  .aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--phone--5 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--phone--6 {
+    float: left;
+    clear: none;
+    width: 60%;
+  }
+  .aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--phone--7 {
+    float: left;
+    clear: none;
+    width: 70%;
+  }
+  .aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--phone--8 {
+    float: left;
+    clear: none;
+    width: 80%;
+  }
+  .aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--phone--9 {
+    float: left;
+    clear: none;
+    width: 90%;
+  }
+  .aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--phone--10 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--phone--10 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 10%;
+  }
+  .aem-Grid.aem-Grid--phone--10 > .aem-GridColumn.aem-GridColumn--phone--2 {
+    float: left;
+    clear: none;
+    width: 20%;
+  }
+  .aem-Grid.aem-Grid--phone--10 > .aem-GridColumn.aem-GridColumn--phone--3 {
+    float: left;
+    clear: none;
+    width: 30%;
+  }
+  .aem-Grid.aem-Grid--phone--10 > .aem-GridColumn.aem-GridColumn--phone--4 {
+    float: left;
+    clear: none;
+    width: 40%;
+  }
+  .aem-Grid.aem-Grid--phone--10 > .aem-GridColumn.aem-GridColumn--phone--5 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--phone--10 > .aem-GridColumn.aem-GridColumn--phone--6 {
+    float: left;
+    clear: none;
+    width: 60%;
+  }
+  .aem-Grid.aem-Grid--phone--10 > .aem-GridColumn.aem-GridColumn--phone--7 {
+    float: left;
+    clear: none;
+    width: 70%;
+  }
+  .aem-Grid.aem-Grid--phone--10 > .aem-GridColumn.aem-GridColumn--phone--8 {
+    float: left;
+    clear: none;
+    width: 80%;
+  }
+  .aem-Grid.aem-Grid--phone--10 > .aem-GridColumn.aem-GridColumn--phone--9 {
+    float: left;
+    clear: none;
+    width: 90%;
+  }
+  .aem-Grid.aem-Grid--phone--10 > .aem-GridColumn.aem-GridColumn--phone--10 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 9.09090909%;
+  }
+  .aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--phone--2 {
+    float: left;
+    clear: none;
+    width: 18.18181818%;
+  }
+  .aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--phone--3 {
+    float: left;
+    clear: none;
+    width: 27.27272727%;
+  }
+  .aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--phone--4 {
+    float: left;
+    clear: none;
+    width: 36.36363636%;
+  }
+  .aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--phone--5 {
+    float: left;
+    clear: none;
+    width: 45.45454545%;
+  }
+  .aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--phone--6 {
+    float: left;
+    clear: none;
+    width: 54.54545455%;
+  }
+  .aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--phone--7 {
+    float: left;
+    clear: none;
+    width: 63.63636364%;
+  }
+  .aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--phone--8 {
+    float: left;
+    clear: none;
+    width: 72.72727273%;
+  }
+  .aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--phone--9 {
+    float: left;
+    clear: none;
+    width: 81.81818182%;
+  }
+  .aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--phone--10 {
+    float: left;
+    clear: none;
+    width: 90.90909091%;
+  }
+  .aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--phone--11 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--phone--11 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 9.09090909%;
+  }
+  .aem-Grid.aem-Grid--phone--11 > .aem-GridColumn.aem-GridColumn--phone--2 {
+    float: left;
+    clear: none;
+    width: 18.18181818%;
+  }
+  .aem-Grid.aem-Grid--phone--11 > .aem-GridColumn.aem-GridColumn--phone--3 {
+    float: left;
+    clear: none;
+    width: 27.27272727%;
+  }
+  .aem-Grid.aem-Grid--phone--11 > .aem-GridColumn.aem-GridColumn--phone--4 {
+    float: left;
+    clear: none;
+    width: 36.36363636%;
+  }
+  .aem-Grid.aem-Grid--phone--11 > .aem-GridColumn.aem-GridColumn--phone--5 {
+    float: left;
+    clear: none;
+    width: 45.45454545%;
+  }
+  .aem-Grid.aem-Grid--phone--11 > .aem-GridColumn.aem-GridColumn--phone--6 {
+    float: left;
+    clear: none;
+    width: 54.54545455%;
+  }
+  .aem-Grid.aem-Grid--phone--11 > .aem-GridColumn.aem-GridColumn--phone--7 {
+    float: left;
+    clear: none;
+    width: 63.63636364%;
+  }
+  .aem-Grid.aem-Grid--phone--11 > .aem-GridColumn.aem-GridColumn--phone--8 {
+    float: left;
+    clear: none;
+    width: 72.72727273%;
+  }
+  .aem-Grid.aem-Grid--phone--11 > .aem-GridColumn.aem-GridColumn--phone--9 {
+    float: left;
+    clear: none;
+    width: 81.81818182%;
+  }
+  .aem-Grid.aem-Grid--phone--11 > .aem-GridColumn.aem-GridColumn--phone--10 {
+    float: left;
+    clear: none;
+    width: 90.90909091%;
+  }
+  .aem-Grid.aem-Grid--phone--11 > .aem-GridColumn.aem-GridColumn--phone--11 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 8.33333333%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--phone--2 {
+    float: left;
+    clear: none;
+    width: 16.66666667%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--phone--3 {
+    float: left;
+    clear: none;
+    width: 25%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--phone--4 {
+    float: left;
+    clear: none;
+    width: 33.33333333%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--phone--5 {
+    float: left;
+    clear: none;
+    width: 41.66666667%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--phone--6 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--phone--7 {
+    float: left;
+    clear: none;
+    width: 58.33333333%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--phone--8 {
+    float: left;
+    clear: none;
+    width: 66.66666667%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--phone--9 {
+    float: left;
+    clear: none;
+    width: 75%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--phone--10 {
+    float: left;
+    clear: none;
+    width: 83.33333333%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--phone--11 {
+    float: left;
+    clear: none;
+    width: 91.66666667%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--phone--12 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--phone--12 > .aem-GridColumn.aem-GridColumn--phone--1 {
+    float: left;
+    clear: none;
+    width: 8.33333333%;
+  }
+  .aem-Grid.aem-Grid--phone--12 > .aem-GridColumn.aem-GridColumn--phone--2 {
+    float: left;
+    clear: none;
+    width: 16.66666667%;
+  }
+  .aem-Grid.aem-Grid--phone--12 > .aem-GridColumn.aem-GridColumn--phone--3 {
+    float: left;
+    clear: none;
+    width: 25%;
+  }
+  .aem-Grid.aem-Grid--phone--12 > .aem-GridColumn.aem-GridColumn--phone--4 {
+    float: left;
+    clear: none;
+    width: 33.33333333%;
+  }
+  .aem-Grid.aem-Grid--phone--12 > .aem-GridColumn.aem-GridColumn--phone--5 {
+    float: left;
+    clear: none;
+    width: 41.66666667%;
+  }
+  .aem-Grid.aem-Grid--phone--12 > .aem-GridColumn.aem-GridColumn--phone--6 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--phone--12 > .aem-GridColumn.aem-GridColumn--phone--7 {
+    float: left;
+    clear: none;
+    width: 58.33333333%;
+  }
+  .aem-Grid.aem-Grid--phone--12 > .aem-GridColumn.aem-GridColumn--phone--8 {
+    float: left;
+    clear: none;
+    width: 66.66666667%;
+  }
+  .aem-Grid.aem-Grid--phone--12 > .aem-GridColumn.aem-GridColumn--phone--9 {
+    float: left;
+    clear: none;
+    width: 75%;
+  }
+  .aem-Grid.aem-Grid--phone--12 > .aem-GridColumn.aem-GridColumn--phone--10 {
+    float: left;
+    clear: none;
+    width: 83.33333333%;
+  }
+  .aem-Grid.aem-Grid--phone--12 > .aem-GridColumn.aem-GridColumn--phone--11 {
+    float: left;
+    clear: none;
+    width: 91.66666667%;
+  }
+  .aem-Grid.aem-Grid--phone--12 > .aem-GridColumn.aem-GridColumn--phone--12 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid > .aem-GridColumn.aem-GridColumn--phone--newline {
+    /* newline behavior */
+    clear: both !important;
+  }
+  .aem-Grid > .aem-GridColumn.aem-GridColumn--phone--hide {
+    /* hide behavior */
+    display: none;
+  }
+}
+
+/* tablet breakpoint */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .aem-Grid.aem-Grid--1 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--tablet--1 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--2 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--2 > .aem-GridColumn.aem-GridColumn--tablet--2 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--tablet--2 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--tablet--2 > .aem-GridColumn.aem-GridColumn--tablet--2 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--3 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 33.33333333%;
+  }
+  .aem-Grid.aem-Grid--3 > .aem-GridColumn.aem-GridColumn--tablet--2 {
+    float: left;
+    clear: none;
+    width: 66.66666667%;
+  }
+  .aem-Grid.aem-Grid--3 > .aem-GridColumn.aem-GridColumn--tablet--3 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--tablet--3 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 33.33333333%;
+  }
+  .aem-Grid.aem-Grid--tablet--3 > .aem-GridColumn.aem-GridColumn--tablet--2 {
+    float: left;
+    clear: none;
+    width: 66.66666667%;
+  }
+  .aem-Grid.aem-Grid--tablet--3 > .aem-GridColumn.aem-GridColumn--tablet--3 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--4 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 25%;
+  }
+  .aem-Grid.aem-Grid--4 > .aem-GridColumn.aem-GridColumn--tablet--2 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--4 > .aem-GridColumn.aem-GridColumn--tablet--3 {
+    float: left;
+    clear: none;
+    width: 75%;
+  }
+  .aem-Grid.aem-Grid--4 > .aem-GridColumn.aem-GridColumn--tablet--4 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--tablet--4 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 25%;
+  }
+  .aem-Grid.aem-Grid--tablet--4 > .aem-GridColumn.aem-GridColumn--tablet--2 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--tablet--4 > .aem-GridColumn.aem-GridColumn--tablet--3 {
+    float: left;
+    clear: none;
+    width: 75%;
+  }
+  .aem-Grid.aem-Grid--tablet--4 > .aem-GridColumn.aem-GridColumn--tablet--4 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--5 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 20%;
+  }
+  .aem-Grid.aem-Grid--5 > .aem-GridColumn.aem-GridColumn--tablet--2 {
+    float: left;
+    clear: none;
+    width: 40%;
+  }
+  .aem-Grid.aem-Grid--5 > .aem-GridColumn.aem-GridColumn--tablet--3 {
+    float: left;
+    clear: none;
+    width: 60%;
+  }
+  .aem-Grid.aem-Grid--5 > .aem-GridColumn.aem-GridColumn--tablet--4 {
+    float: left;
+    clear: none;
+    width: 80%;
+  }
+  .aem-Grid.aem-Grid--5 > .aem-GridColumn.aem-GridColumn--tablet--5 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--tablet--5 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 20%;
+  }
+  .aem-Grid.aem-Grid--tablet--5 > .aem-GridColumn.aem-GridColumn--tablet--2 {
+    float: left;
+    clear: none;
+    width: 40%;
+  }
+  .aem-Grid.aem-Grid--tablet--5 > .aem-GridColumn.aem-GridColumn--tablet--3 {
+    float: left;
+    clear: none;
+    width: 60%;
+  }
+  .aem-Grid.aem-Grid--tablet--5 > .aem-GridColumn.aem-GridColumn--tablet--4 {
+    float: left;
+    clear: none;
+    width: 80%;
+  }
+  .aem-Grid.aem-Grid--tablet--5 > .aem-GridColumn.aem-GridColumn--tablet--5 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--6 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 16.66666667%;
+  }
+  .aem-Grid.aem-Grid--6 > .aem-GridColumn.aem-GridColumn--tablet--2 {
+    float: left;
+    clear: none;
+    width: 33.33333333%;
+  }
+  .aem-Grid.aem-Grid--6 > .aem-GridColumn.aem-GridColumn--tablet--3 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--6 > .aem-GridColumn.aem-GridColumn--tablet--4 {
+    float: left;
+    clear: none;
+    width: 66.66666667%;
+  }
+  .aem-Grid.aem-Grid--6 > .aem-GridColumn.aem-GridColumn--tablet--5 {
+    float: left;
+    clear: none;
+    width: 83.33333333%;
+  }
+  .aem-Grid.aem-Grid--6 > .aem-GridColumn.aem-GridColumn--tablet--6 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--tablet--6 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 16.66666667%;
+  }
+  .aem-Grid.aem-Grid--tablet--6 > .aem-GridColumn.aem-GridColumn--tablet--2 {
+    float: left;
+    clear: none;
+    width: 33.33333333%;
+  }
+  .aem-Grid.aem-Grid--tablet--6 > .aem-GridColumn.aem-GridColumn--tablet--3 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--tablet--6 > .aem-GridColumn.aem-GridColumn--tablet--4 {
+    float: left;
+    clear: none;
+    width: 66.66666667%;
+  }
+  .aem-Grid.aem-Grid--tablet--6 > .aem-GridColumn.aem-GridColumn--tablet--5 {
+    float: left;
+    clear: none;
+    width: 83.33333333%;
+  }
+  .aem-Grid.aem-Grid--tablet--6 > .aem-GridColumn.aem-GridColumn--tablet--6 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--7 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 14.28571429%;
+  }
+  .aem-Grid.aem-Grid--7 > .aem-GridColumn.aem-GridColumn--tablet--2 {
+    float: left;
+    clear: none;
+    width: 28.57142857%;
+  }
+  .aem-Grid.aem-Grid--7 > .aem-GridColumn.aem-GridColumn--tablet--3 {
+    float: left;
+    clear: none;
+    width: 42.85714286%;
+  }
+  .aem-Grid.aem-Grid--7 > .aem-GridColumn.aem-GridColumn--tablet--4 {
+    float: left;
+    clear: none;
+    width: 57.14285714%;
+  }
+  .aem-Grid.aem-Grid--7 > .aem-GridColumn.aem-GridColumn--tablet--5 {
+    float: left;
+    clear: none;
+    width: 71.42857143%;
+  }
+  .aem-Grid.aem-Grid--7 > .aem-GridColumn.aem-GridColumn--tablet--6 {
+    float: left;
+    clear: none;
+    width: 85.71428571%;
+  }
+  .aem-Grid.aem-Grid--7 > .aem-GridColumn.aem-GridColumn--tablet--7 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--tablet--7 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 14.28571429%;
+  }
+  .aem-Grid.aem-Grid--tablet--7 > .aem-GridColumn.aem-GridColumn--tablet--2 {
+    float: left;
+    clear: none;
+    width: 28.57142857%;
+  }
+  .aem-Grid.aem-Grid--tablet--7 > .aem-GridColumn.aem-GridColumn--tablet--3 {
+    float: left;
+    clear: none;
+    width: 42.85714286%;
+  }
+  .aem-Grid.aem-Grid--tablet--7 > .aem-GridColumn.aem-GridColumn--tablet--4 {
+    float: left;
+    clear: none;
+    width: 57.14285714%;
+  }
+  .aem-Grid.aem-Grid--tablet--7 > .aem-GridColumn.aem-GridColumn--tablet--5 {
+    float: left;
+    clear: none;
+    width: 71.42857143%;
+  }
+  .aem-Grid.aem-Grid--tablet--7 > .aem-GridColumn.aem-GridColumn--tablet--6 {
+    float: left;
+    clear: none;
+    width: 85.71428571%;
+  }
+  .aem-Grid.aem-Grid--tablet--7 > .aem-GridColumn.aem-GridColumn--tablet--7 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 12.5%;
+  }
+  .aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--tablet--2 {
+    float: left;
+    clear: none;
+    width: 25%;
+  }
+  .aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--tablet--3 {
+    float: left;
+    clear: none;
+    width: 37.5%;
+  }
+  .aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--tablet--4 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--tablet--5 {
+    float: left;
+    clear: none;
+    width: 62.5%;
+  }
+  .aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--tablet--6 {
+    float: left;
+    clear: none;
+    width: 75%;
+  }
+  .aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--tablet--7 {
+    float: left;
+    clear: none;
+    width: 87.5%;
+  }
+  .aem-Grid.aem-Grid--8 > .aem-GridColumn.aem-GridColumn--tablet--8 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--tablet--8 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 12.5%;
+  }
+  .aem-Grid.aem-Grid--tablet--8 > .aem-GridColumn.aem-GridColumn--tablet--2 {
+    float: left;
+    clear: none;
+    width: 25%;
+  }
+  .aem-Grid.aem-Grid--tablet--8 > .aem-GridColumn.aem-GridColumn--tablet--3 {
+    float: left;
+    clear: none;
+    width: 37.5%;
+  }
+  .aem-Grid.aem-Grid--tablet--8 > .aem-GridColumn.aem-GridColumn--tablet--4 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--tablet--8 > .aem-GridColumn.aem-GridColumn--tablet--5 {
+    float: left;
+    clear: none;
+    width: 62.5%;
+  }
+  .aem-Grid.aem-Grid--tablet--8 > .aem-GridColumn.aem-GridColumn--tablet--6 {
+    float: left;
+    clear: none;
+    width: 75%;
+  }
+  .aem-Grid.aem-Grid--tablet--8 > .aem-GridColumn.aem-GridColumn--tablet--7 {
+    float: left;
+    clear: none;
+    width: 87.5%;
+  }
+  .aem-Grid.aem-Grid--tablet--8 > .aem-GridColumn.aem-GridColumn--tablet--8 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 11.11111111%;
+  }
+  .aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--tablet--2 {
+    float: left;
+    clear: none;
+    width: 22.22222222%;
+  }
+  .aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--tablet--3 {
+    float: left;
+    clear: none;
+    width: 33.33333333%;
+  }
+  .aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--tablet--4 {
+    float: left;
+    clear: none;
+    width: 44.44444444%;
+  }
+  .aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--tablet--5 {
+    float: left;
+    clear: none;
+    width: 55.55555556%;
+  }
+  .aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--tablet--6 {
+    float: left;
+    clear: none;
+    width: 66.66666667%;
+  }
+  .aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--tablet--7 {
+    float: left;
+    clear: none;
+    width: 77.77777778%;
+  }
+  .aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--tablet--8 {
+    float: left;
+    clear: none;
+    width: 88.88888889%;
+  }
+  .aem-Grid.aem-Grid--9 > .aem-GridColumn.aem-GridColumn--tablet--9 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--tablet--9 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 11.11111111%;
+  }
+  .aem-Grid.aem-Grid--tablet--9 > .aem-GridColumn.aem-GridColumn--tablet--2 {
+    float: left;
+    clear: none;
+    width: 22.22222222%;
+  }
+  .aem-Grid.aem-Grid--tablet--9 > .aem-GridColumn.aem-GridColumn--tablet--3 {
+    float: left;
+    clear: none;
+    width: 33.33333333%;
+  }
+  .aem-Grid.aem-Grid--tablet--9 > .aem-GridColumn.aem-GridColumn--tablet--4 {
+    float: left;
+    clear: none;
+    width: 44.44444444%;
+  }
+  .aem-Grid.aem-Grid--tablet--9 > .aem-GridColumn.aem-GridColumn--tablet--5 {
+    float: left;
+    clear: none;
+    width: 55.55555556%;
+  }
+  .aem-Grid.aem-Grid--tablet--9 > .aem-GridColumn.aem-GridColumn--tablet--6 {
+    float: left;
+    clear: none;
+    width: 66.66666667%;
+  }
+  .aem-Grid.aem-Grid--tablet--9 > .aem-GridColumn.aem-GridColumn--tablet--7 {
+    float: left;
+    clear: none;
+    width: 77.77777778%;
+  }
+  .aem-Grid.aem-Grid--tablet--9 > .aem-GridColumn.aem-GridColumn--tablet--8 {
+    float: left;
+    clear: none;
+    width: 88.88888889%;
+  }
+  .aem-Grid.aem-Grid--tablet--9 > .aem-GridColumn.aem-GridColumn--tablet--9 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 10%;
+  }
+  .aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--tablet--2 {
+    float: left;
+    clear: none;
+    width: 20%;
+  }
+  .aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--tablet--3 {
+    float: left;
+    clear: none;
+    width: 30%;
+  }
+  .aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--tablet--4 {
+    float: left;
+    clear: none;
+    width: 40%;
+  }
+  .aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--tablet--5 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--tablet--6 {
+    float: left;
+    clear: none;
+    width: 60%;
+  }
+  .aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--tablet--7 {
+    float: left;
+    clear: none;
+    width: 70%;
+  }
+  .aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--tablet--8 {
+    float: left;
+    clear: none;
+    width: 80%;
+  }
+  .aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--tablet--9 {
+    float: left;
+    clear: none;
+    width: 90%;
+  }
+  .aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--tablet--10 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--tablet--10 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 10%;
+  }
+  .aem-Grid.aem-Grid--tablet--10 > .aem-GridColumn.aem-GridColumn--tablet--2 {
+    float: left;
+    clear: none;
+    width: 20%;
+  }
+  .aem-Grid.aem-Grid--tablet--10 > .aem-GridColumn.aem-GridColumn--tablet--3 {
+    float: left;
+    clear: none;
+    width: 30%;
+  }
+  .aem-Grid.aem-Grid--tablet--10 > .aem-GridColumn.aem-GridColumn--tablet--4 {
+    float: left;
+    clear: none;
+    width: 40%;
+  }
+  .aem-Grid.aem-Grid--tablet--10 > .aem-GridColumn.aem-GridColumn--tablet--5 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--tablet--10 > .aem-GridColumn.aem-GridColumn--tablet--6 {
+    float: left;
+    clear: none;
+    width: 60%;
+  }
+  .aem-Grid.aem-Grid--tablet--10 > .aem-GridColumn.aem-GridColumn--tablet--7 {
+    float: left;
+    clear: none;
+    width: 70%;
+  }
+  .aem-Grid.aem-Grid--tablet--10 > .aem-GridColumn.aem-GridColumn--tablet--8 {
+    float: left;
+    clear: none;
+    width: 80%;
+  }
+  .aem-Grid.aem-Grid--tablet--10 > .aem-GridColumn.aem-GridColumn--tablet--9 {
+    float: left;
+    clear: none;
+    width: 90%;
+  }
+  .aem-Grid.aem-Grid--tablet--10 > .aem-GridColumn.aem-GridColumn--tablet--10 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 9.09090909%;
+  }
+  .aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--tablet--2 {
+    float: left;
+    clear: none;
+    width: 18.18181818%;
+  }
+  .aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--tablet--3 {
+    float: left;
+    clear: none;
+    width: 27.27272727%;
+  }
+  .aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--tablet--4 {
+    float: left;
+    clear: none;
+    width: 36.36363636%;
+  }
+  .aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--tablet--5 {
+    float: left;
+    clear: none;
+    width: 45.45454545%;
+  }
+  .aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--tablet--6 {
+    float: left;
+    clear: none;
+    width: 54.54545455%;
+  }
+  .aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--tablet--7 {
+    float: left;
+    clear: none;
+    width: 63.63636364%;
+  }
+  .aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--tablet--8 {
+    float: left;
+    clear: none;
+    width: 72.72727273%;
+  }
+  .aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--tablet--9 {
+    float: left;
+    clear: none;
+    width: 81.81818182%;
+  }
+  .aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--tablet--10 {
+    float: left;
+    clear: none;
+    width: 90.90909091%;
+  }
+  .aem-Grid.aem-Grid--11 > .aem-GridColumn.aem-GridColumn--tablet--11 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--tablet--11 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 9.09090909%;
+  }
+  .aem-Grid.aem-Grid--tablet--11 > .aem-GridColumn.aem-GridColumn--tablet--2 {
+    float: left;
+    clear: none;
+    width: 18.18181818%;
+  }
+  .aem-Grid.aem-Grid--tablet--11 > .aem-GridColumn.aem-GridColumn--tablet--3 {
+    float: left;
+    clear: none;
+    width: 27.27272727%;
+  }
+  .aem-Grid.aem-Grid--tablet--11 > .aem-GridColumn.aem-GridColumn--tablet--4 {
+    float: left;
+    clear: none;
+    width: 36.36363636%;
+  }
+  .aem-Grid.aem-Grid--tablet--11 > .aem-GridColumn.aem-GridColumn--tablet--5 {
+    float: left;
+    clear: none;
+    width: 45.45454545%;
+  }
+  .aem-Grid.aem-Grid--tablet--11 > .aem-GridColumn.aem-GridColumn--tablet--6 {
+    float: left;
+    clear: none;
+    width: 54.54545455%;
+  }
+  .aem-Grid.aem-Grid--tablet--11 > .aem-GridColumn.aem-GridColumn--tablet--7 {
+    float: left;
+    clear: none;
+    width: 63.63636364%;
+  }
+  .aem-Grid.aem-Grid--tablet--11 > .aem-GridColumn.aem-GridColumn--tablet--8 {
+    float: left;
+    clear: none;
+    width: 72.72727273%;
+  }
+  .aem-Grid.aem-Grid--tablet--11 > .aem-GridColumn.aem-GridColumn--tablet--9 {
+    float: left;
+    clear: none;
+    width: 81.81818182%;
+  }
+  .aem-Grid.aem-Grid--tablet--11 > .aem-GridColumn.aem-GridColumn--tablet--10 {
+    float: left;
+    clear: none;
+    width: 90.90909091%;
+  }
+  .aem-Grid.aem-Grid--tablet--11 > .aem-GridColumn.aem-GridColumn--tablet--11 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 8.33333333%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--tablet--2 {
+    float: left;
+    clear: none;
+    width: 16.66666667%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--tablet--3 {
+    float: left;
+    clear: none;
+    width: 25%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--tablet--4 {
+    float: left;
+    clear: none;
+    width: 33.33333333%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--tablet--5 {
+    float: left;
+    clear: none;
+    width: 41.66666667%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--tablet--6 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--tablet--7 {
+    float: left;
+    clear: none;
+    width: 58.33333333%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--tablet--8 {
+    float: left;
+    clear: none;
+    width: 66.66666667%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--tablet--9 {
+    float: left;
+    clear: none;
+    width: 75%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--tablet--10 {
+    float: left;
+    clear: none;
+    width: 83.33333333%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--tablet--11 {
+    float: left;
+    clear: none;
+    width: 91.66666667%;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--tablet--12 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid.aem-Grid--tablet--12 > .aem-GridColumn.aem-GridColumn--tablet--1 {
+    float: left;
+    clear: none;
+    width: 8.33333333%;
+  }
+  .aem-Grid.aem-Grid--tablet--12 > .aem-GridColumn.aem-GridColumn--tablet--2 {
+    float: left;
+    clear: none;
+    width: 16.66666667%;
+  }
+  .aem-Grid.aem-Grid--tablet--12 > .aem-GridColumn.aem-GridColumn--tablet--3 {
+    float: left;
+    clear: none;
+    width: 25%;
+  }
+  .aem-Grid.aem-Grid--tablet--12 > .aem-GridColumn.aem-GridColumn--tablet--4 {
+    float: left;
+    clear: none;
+    width: 33.33333333%;
+  }
+  .aem-Grid.aem-Grid--tablet--12 > .aem-GridColumn.aem-GridColumn--tablet--5 {
+    float: left;
+    clear: none;
+    width: 41.66666667%;
+  }
+  .aem-Grid.aem-Grid--tablet--12 > .aem-GridColumn.aem-GridColumn--tablet--6 {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+  .aem-Grid.aem-Grid--tablet--12 > .aem-GridColumn.aem-GridColumn--tablet--7 {
+    float: left;
+    clear: none;
+    width: 58.33333333%;
+  }
+  .aem-Grid.aem-Grid--tablet--12 > .aem-GridColumn.aem-GridColumn--tablet--8 {
+    float: left;
+    clear: none;
+    width: 66.66666667%;
+  }
+  .aem-Grid.aem-Grid--tablet--12 > .aem-GridColumn.aem-GridColumn--tablet--9 {
+    float: left;
+    clear: none;
+    width: 75%;
+  }
+  .aem-Grid.aem-Grid--tablet--12 > .aem-GridColumn.aem-GridColumn--tablet--10 {
+    float: left;
+    clear: none;
+    width: 83.33333333%;
+  }
+  .aem-Grid.aem-Grid--tablet--12 > .aem-GridColumn.aem-GridColumn--tablet--11 {
+    float: left;
+    clear: none;
+    width: 91.66666667%;
+  }
+  .aem-Grid.aem-Grid--tablet--12 > .aem-GridColumn.aem-GridColumn--tablet--12 {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  .aem-Grid > .aem-GridColumn.aem-GridColumn--tablet--newline {
+    /* newline behavior */
+    clear: both !important;
+  }
+  .aem-Grid > .aem-GridColumn.aem-GridColumn--tablet--hide {
+    /* hide behavior */
+    display: none;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ol, ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  line-height: inherit;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+fieldset {
+  border: 0;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+/* Common CSS */
+body {
+  font-family: 'proxima nova', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  overflow-x: hidden;
+}
+
+input,
+select {
+  vertical-align: top;
+}
+
+.align_center {
+  text-align: center;
+}
+
+/* Colors: */
+/* Font/text values */
+@use "./variables";
+/* Character Styles */
+header {
+  background: #E26A2C 0% 0% no-repeat padding-box;
+  border-bottom: 1px solid #91959C;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  max-width: 100%;
+  margin: 0 auto;
+  z-index: 999;
+}
+
+header a {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #172026;
+  font-family: Muli;
+  color: #FFFFFF;
+}
+
+header nav {
+  padding: 16px 0;
+}
+
+header nav .mobile_menu {
+  display: none;
+}
+
+header nav .mobile_menu img {
+  width: 18px;
+  height: 12px;
+}
+
+header nav .logo img {
+  max-width: 7rem;
+  max-height: 3rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: middle;
+}
+
+header nav .main_menus ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header nav .main_menus ul li:not(:last-child) {
+  padding-right: 32px;
+}
+
+header nav .main_menus ul li .active {
+  border-bottom: 4px solid #FFD07F;
+  padding-bottom: 0.7rem;
+}
+
+header nav .main_menus ul li span {
+  text-align: right;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #172026;
+  font-family: Muli;
+  color: #FFFFFF;
+}
+
+header nav .main_menus ul li span:hover {
+  color: black;
+  font-weight: bold;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+header nav .right_nav ul {
+  text-align: right;
+}
+
+header nav .right_nav ul li {
+  padding-right: 16px;
+}
+
+header nav .right_nav ul li img {
+  width: 22px;
+  height: 24px;
+  background: transparent 0% 0% no-repeat padding-box;
+  padding: 2px;
+}
+
+header nav .right_nav ul .add-cart {
+  position: relative;
+  padding: 16px 0;
+  top: 16px;
+}
+
+header nav .right_nav ul .add-cart img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+header nav .right_nav ul .add-cart .cart_counter {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 22px;
+  height: 22px;
+  font-size: 12px;
+  text-align: center;
+  vertical-align: middle;
+  color: #FFFFFF;
+  background: #FDA65D;
+  border-radius: 50%;
+  -webkit-text-stroke-width: thick;
+}
+
+header nav .right_nav ul .add-cart .cart_counter:hover, header nav .right_nav ul .add-cart .cart_counter:focus {
+  -webkit-animation: pulse 1s;
+          animation: pulse 1s;
+  -webkit-box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+          box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 #FFFFFF;
+            box-shadow: 0 0 0 0 #FFFFFF;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 #FFFFFF;
+            box-shadow: 0 0 0 0 #FFFFFF;
+  }
+}
+
+@use "../common/mixin";
+@use "../common/variables";
+footer .footer-top {
+  padding: 44px 0;
+}
+
+footer .footer-top .submenu__heading {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  font-family: Muli;
+  color: #172026;
+  padding-bottom: 16px;
+}
+
+footer .footer-top a, footer .footer-top p {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  font-family: Muli;
+  color: #545D63;
+  padding-bottom: 8px;
+}
+
+footer .footer-top p {
+  max-width: 100%;
+}
+
+footer .footer-top .social_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer-top .social_link img {
+  font-size: 25px;
+  width: 20px;
+  height: 20px;
+  margin-right: 26px;
+}
+
+footer .footer-bottom {
+  padding: 24px 0;
+}
+
+footer .footer-bottom figure img {
+  width: 6rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 24px;
+}
+
+footer .footer-bottom .copyright {
+  text-align: center;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 17.5px;
+  font-family: Muli;
+  color: #545D63;
+}
+
+footer .footer-bottom .left-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer-bottom .left-nav li a {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  font-family: Proxima Nova;
+  line-height: 17.5px;
+  color: #172026;
+  text-decoration: underline;
+}
+
+@use "../../../Style/Common/mixin";
+@use "../../../Style/Common/variables";
+.homebanner {
+  background-color: #E5E5E7;
+  min-height: 75vh;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.homebanner .arrow {
+  padding-top: 16rem;
+  padding-left: 50px;
+}
+
+.homebanner .arrow figure img {
+  width: 20px;
+  height: 40px;
+}
+
+.homebanner .homebanner_content {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 7rem 0;
+}
+
+.homebanner .homebanner_content h1 {
+  font-size: 48px;
+  font-weight: 600;
+  font-family: Source Serif Pro;
+  line-height: 60px;
+  max-width: 30rem;
+}
+
+.homebanner .homebanner_content p {
+  padding: 8px 0 35px 0;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #172026;
+  font-family: Muli;
+  max-width: 34rem;
+}
+
+.homebanner .homebanner_content .dots_action {
+  display: none;
+  margin-top: 32px;
+}
+
+.homebanner .homebanner_content .dots_action :first-child {
+  background-color: #FFFFFF;
+}
+
+.homebanner .homebanner_content .dots_action button {
+  border-radius: 50%;
+  background-color: #666666;
+  padding: 0.3em;
+  border: none;
+  margin-left: 20px;
+}
+
+.homebanner .homebanner_image {
+  min-height: 100%;
+  float: none;
+  background-image: url("../../../Images/herobanner1.png");
+  background-repeat: no-repeat;
+  background-size: 100% 160%;
+  background-origin: border-box;
+}
+
+.homebanner .homebanner_image figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@use "../../Style/Common/mixin";
+@use "../../Style/Common/variables";
+.btn_lab {
+  padding: 11px 69px;
+  background-color: #E26A2C;
+  border: none;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 16px;
+  color: #FFFFFF;
+  font-family: Muli;
+  text-transform: uppercase;
+}
+
+.btn_lab:hover, .btn_lab:focus {
+  -webkit-animation: pulse 1s;
+          animation: pulse 1s;
+  -webkit-box-shadow: 0 0 0 0.2em rgba(255, 255, 255, 0);
+          box-shadow: 0 0 0 0.2em rgba(255, 255, 255, 0);
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  transition: -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
+  cursor: pointer;
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 black;
+            box-shadow: 0 0 0 0 black;
+  }
+}
+
+.category_teaser {
+  position: relative;
+  margin-top: -3%;
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+@use "../../../Style/Common/mixin";
+@use "../../../Style/Common/variables";
+.category_card {
+  position: relative;
+  height: 320px;
+  border-bottom: 8px solid #E26A2C;
+  background-color: #FFFFFF;
+  width: 100%;
+}
+
+.category_card:not(:last-child) {
+  margin-right: 13px;
+}
+
+.category_card:hover {
+  -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  transition: -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
+}
+
+.category_card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.category_card .overlay {
+  position: absolute;
+  bottom: 0;
+  background: #1B252CD9;
+  width: 100%;
+  opacity: 1;
+  padding: 17px 17px;
+}
+
+.category_card .overlay h4 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  font-family: Source Serif Pro;
+  color: #FFFFFF;
+}
+
+.category_card .overlay p {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 23px;
+  font-family: Muli;
+  color: #FFFFFF;
+  max-width: 100%;
+}
+
+.teaserbanner_one {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.teaserbanner_one .teaserbanner_content {
+  padding: 40px 0 56px 100px;
+}
+
+.teaserbanner_one .teaserbanner_content h1 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 60px;
+  font-family: Source Serif Pro;
+  color: #172026;
+  max-width: 100%;
+}
+
+.teaserbanner_one .teaserbanner_content strong {
+  padding-top: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  font-family: Muli;
+  color: #172026;
+  max-width: 100%;
+}
+
+.teaserbanner_one .teaserbanner_content p {
+  padding: 16px 0 24px 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  font-family: Muli;
+  color: #172026;
+  max-width: 100%;
+}
+
+.teaserbanner_one .teaserbanner_content .action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.teaserbanner_one .teaserbanner_content .shop_collection {
+  padding: 9px 42px;
+  color: #E26A2C;
+  border: 1px solid #E26A2C;
+  background-color: #FFFFFF;
+  margin-right: 10px;
+}
+
+.teaserbanner_one .teaserbanner_content .border_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  text-align: center;
+  padding-top: 56px;
+}
+
+.teaserbanner_one .teaserbanner_content .border_box .border {
+  width: 102px;
+  height: 8px;
+  background-color: #E26A2C;
+}
+
+.teaserbanner_one .teaserbanner_image {
+  background: url("../../Images/homebanner22.png") no-repeat;
+  background-size: 100% 150%;
+  min-height: 100%;
+  float: none;
+}
+
+.teaserbanner_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #FFFFFF;
+  align-items: center;
+}
+
+.teaserbanner_secone {
+  width: 62%;
+}
+
+.teaserbanner_secone > img {
+  width: 100%;
+  height: 350px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.teaserbanner_sectwo {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #1B252C;
+  width: 38%;
+  height: 380px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.teaserbanner_sectwo > h2 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 62px;
+  font-family: Source Serif Pro;
+  max-width: 100%;
+  margin-bottom: 16px;
+}
+
+.teaserbanner_sectwo > h2 span {
+  display: block;
+}
+
+.teaserbanner_sectwo > span {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  font-family: Muli;
+  margin-bottom: 16px;
+}
+
+.teaserbanner_sectwo > .shop_devices {
+  width: 50%;
+  border: 2px solid #FFFFFF;
+  background-color: transparent;
+  padding: 11px 10px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+.teaserbanner_sectwo > img {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  bottom: 64.5px;
+  left: -27px;
+}
+
+.teaserbanner_sectwo > hr {
+  border: 4px solid #E26A2C;
+  width: 102px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  position: absolute;
+  bottom: 40px;
+  left: -51px;
+}
+
+@media screen and (max-width: 328px) {
+  .teaserbanner_sectwo {
+    width: 100%;
+    margin: 0 16px;
+    height: 300px;
+  }
+  .teaserbanner_secone > img {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    top: 40px;
+  }
+  .teaserbanner_sectwo > img {
+    left: 82.5px;
+    top: -22px;
+    padding-bottom: 5px;
+    border-bottom: 8px solid #FF8243;
+  }
+  .teaserbanner_sectwo > hr {
+    display: none;
+  }
+  .teaserbanner_sectwo > h2 {
+    text-align: center !important;
+  }
+  .teaserbanner_sectwo > h2 span {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 328px) and (max-width: 768px) {
+  .teaserbanner_sectwo {
+    width: 90%;
+    margin: 0 16px;
+    height: 300px;
+  }
+  .teaserbanner_secone {
+    width: 100%;
+  }
+  .teaserbanner_secone > img {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    top: 40px;
+  }
+  .teaserbanner_sectwo > img {
+    left: 82.5px;
+    top: -22px;
+    padding-bottom: 10px;
+    border-bottom: 8px solid #E26A2C;
+  }
+  .teaserbanner_sectwo > hr {
+    display: none;
+  }
+  .teaserbanner_sectwo > h2 span {
+    display: none;
+  }
+}
+
+.card {
+  padding-bottom: 20px;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+.card:not(:nth-child(3n)) {
+  padding-right: 2em;
+}
+
+.card:hover {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+.card figure {
+  border: 1px solid #E5E5E7;
+  margin: 0;
+  line-height: 0;
+  background-color: #f3f3f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+}
+
+.card figure:hover {
+  -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  transition: -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
+}
+
+.card figure img {
+  max-width: 100%;
+  height: 280px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-color: transparent;
+  mix-blend-mode: multiply;
+  opacity: 1;
+}
+
+.card .product-details {
+  padding-top: 8px;
+  height: 100px;
+}
+
+.card .product-details .product-title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+  font-family: Muli;
+  color: #1B252C;
+  display: block;
+}
+
+.card .product-details .product-price {
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  font-family: Muli;
+  color: #1B252C;
+}
+
+.card .product-details .fav_icon {
+  margin-top: 17px;
+  width: 24px;
+  height: 20px;
+  color: #1B252C;
+  border-color: #181C24 0% 0% no-repeat padding-box;
+}
+
+.filter_aside {
+  padding-top: 24px;
+}
+
+.filter_aside .filter_container {
+  padding-right: 46px;
+}
+
+.filter_aside .filter_container h5 {
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 14px;
+  font-family: Muli;
+  color: #181C24;
+}
+
+.filter_aside .filter_container h6 {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  font-family: Muli;
+  padding: 16px 0;
+  color: #181C24;
+  font-family: Muli;
+}
+
+.filter_aside .filter_container a {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  font-family: Muli;
+  color: #181C24;
+  text-decoration: underline;
+}
+
+.filter_aside .filter_container .checkbox {
+  padding-top: 16px;
+}
+
+.filter_aside .filter_container .checkbox input {
+  accent-color: #E26A2C;
+  border: 2px solid #E26A2C;
+  width: 24px;
+  height: 24px;
+}
+
+.filter_aside .filter_container .checkbox label {
+  margin-left: 16px;
+  font-family: Muli;
+}
+
+.filter_aside .filter_container .attribute {
+  padding-bottom: 32px;
+  border-bottom: 2px solid #E5E5E7;
+}
+
+.pagination {
+  padding: 0 0 3rem 0;
+}
+
+.pagination ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pagination ul li a {
+  padding: 0.5em;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #172026;
+  font-family: Muli;
+}
+
+.sort_dropdown select {
+  padding: 10px;
+  border-radius: 7px;
+  border-color: #B5B7BC;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #172026;
+  font-family: Muli;
+}
+
+.sort_dropdown select option {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #172026;
+  font-family: Muli;
+}
+
+.category_row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.category_row .left_category {
+  padding: 13px 0 11px 0;
+}
+
+.category_row .left_category a {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #172026;
+  font-family: Muli;
+}
+
+.category_row .total_result {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #172026;
+  font-family: Muli;
+  padding: 13px 0 11px 0;
+}
+
+.mobileview_filterheader {
+  display: none;
+}
+
+.mobileview_filterheader .filtergheader_top ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mobileview_filterheader .filtergheader_top ul li {
+  padding: 32px 16px;
+  text-decoration: underline;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+  font-family: Muli;
+  color: #181C24;
+}
+
+.mobileview_filterheader .filtergheader_top ul li img {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.mobileview_filterheader .filtergheader_top ul li .arrow_img {
+  width: 12px;
+  height: 12px;
+  vertical-align: middle;
+  margin: -2px;
+  padding: 0;
+}
+
+.mobileview_filterheader .total_result {
+  text-align: center;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  font-family: Muli;
+  color: #1B252C;
+}
+
+.product_image .react-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.product_image .react-slider .react-slider__ul {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 17px 0 0;
+}
+
+.product_image .react-slider .react-slider__ul li {
+  width: 100px;
+  margin: 0 0 16px;
+  border: 1px solid #ddd;
+  border-bottom-width: 4px;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+
+.product_image .react-slider .react-slider__ul li.active {
+  border-bottom-color: #E26A2C;
+}
+
+.product_image .react-slider .react-slider__ul li img {
+  border: 0;
+}
+
+.product_image .react-slider .react-slider__container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.product_image .react-slider .react-slider__imgZoom {
+  width: 100%;
+}
+
+.product_image .react-slider .react-slider__btnPrev,
+.product_image .react-slider .react-slider__btnNext {
+  display: none;
+}
+
+.product_image .react-slider .react-slider__picture,
+.product_image .react-slider .react-slider__ul li {
+  position: relative;
+}
+
+.product_image .react-slider .react-slider__picture::before,
+.product_image .react-slider .react-slider__ul li::before {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.product_image .react-slider .react-slider__picture img,
+.product_image .react-slider .react-slider__ul li img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.product_image .react-slider .react-slider__picture {
+  min-height: 600px;
+}
+
+.product_image .react-slider .react-slider__picture img {
+  padding: 0.7em;
+}
+
+.product_image .react-slider .react-slider__imgZoom {
+  opacity: 0 !important;
+  z-index: 0 !important;
+  display: none !important;
+}
+
+.product_image .react-slider .react-slider__lens {
+  display: none !important;
+}
+
+.product_image .category_left {
+  display: none;
+}
+
+.product_image .images_column {
+  padding-right: 17px;
+}
+
+.product_image .images_column figure:first-child {
+  border-bottom: 4px solid #E26A2C;
+}
+
+.product_image .images_column figure:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.product_image .images_column figure img {
+  height: 110px;
+  padding: 0.5em;
+}
+
+.product_image .images_column button {
+  height: 30px;
+  width: 100%;
+  background: transparent;
+  border: none;
+}
+
+.product_image .images_column button img {
+  padding: 0.8em;
+}
+
+.product_image .main_image figure img {
+  height: 680px;
+}
+
+.product_image .main_image .single_image {
+  display: block;
+}
+
+.product_image .main_image .prodGallary_images {
+  display: none;
+}
+
+.product_details {
+  padding-left: 37px;
+}
+
+.product_details .category a {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #172026;
+  font-family: Muli;
+}
+
+.product_details h1 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 45px;
+  font-family: Source Serif Pro;
+  padding-top: 20px;
+}
+
+.product_details h4 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #172026;
+  font-family: Muli;
+  padding: 8px 0 17px 0;
+}
+
+.product_details .stars-outer {
+  position: relative;
+  display: inline-block;
+}
+
+.product_details .stars-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+}
+
+.product_details .stars-outer::before {
+  content: '\f005  \f005  \f005  \f005  \f005';
+  font-family: 'FontAwesome';
+  font-weight: 500;
+  font-size: 16px;
+  color: #ccc;
+}
+
+.product_details .stars-inner::before {
+  content: '\f005  \f005  \f005  \f005  \f005';
+  font-size: 16px;
+  font-family: 'FontAwesome';
+  font-weight: 500;
+  color: black;
+}
+
+.product_details .number-rating {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #1B252C;
+}
+
+.product_details .prod_description {
+  padding: 18px 0;
+  border-bottom: 1px solid #D1D3D6;
+}
+
+.product_details .prod_description p {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #172026;
+  font-family: Muli;
+}
+
+.product_details .prod_description p button.read_more {
+  border: none;
+  background: none;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #172026;
+  font-family: Muli;
+  text-decoration: underline;
+}
+
+.product_details .filter_head {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #172026;
+  font-family: Muli;
+  padding-top: 16px;
+}
+
+.product_details .action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.product_details .filter_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product_details .filter_container .color_box {
+  width: 64px;
+  height: 40px;
+  margin-right: 15px;
+  border-radius: 6px;
+}
+
+.product_details .filter_container .size_box {
+  width: 64px;
+  height: 40px;
+  margin-right: 15px;
+  border-radius: 6px;
+  border: 2px solid #91959C;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  font-family: Muli;
+  background-color: #FFFFFF;
+}
+
+.product_details .filter_container button {
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  border: 1px solid #E5E5E7;
+}
+
+.product_details .filter_container input {
+  border-radius: 5px;
+  height: 32px;
+  width: 114px;
+  border: 1px solid #E5E5E7;
+  margin: 0 12px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.product_details .product_response {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 24px 0 16px 78px;
+}
+
+.product_details .product_response a {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #172026;
+  font-family: Muli;
+  padding-right: 38px;
+}
+
+.product_details .product_response a img {
+  width: 18px;
+  height: 16px;
+  margin-right: 9px;
+}
+
+@use "../../Style/Common/variables";
+.prod_Description .mainprod_head {
+  padding-top: 50px;
+}
+
+.prod_Description p {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  font-family: Muli;
+  max-width: 100%;
+}
+
+.prod_Description h1 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 45px;
+  font-family: Source Serif Pro;
+}
+
+.prod_Description h5 {
+  padding-bottom: 16px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  font-family: Muli;
+}
+
+.prod_Description .right_details {
+  padding-top: 24px;
+}
+
+.prod_Description .right_details button {
+  background-color: #E26A2C;
+  width: 102px;
+  height: 8px;
+  border: none;
+  display: block;
+  margin-top: 32px;
+}
+
+.main_banner .leftside_banner {
+  background-color: #1B252C;
+  color: #FFFFFF;
+  height: 352px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_banner .leftside_banner h1 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 60px;
+  font-family: Source Serif Pro;
+}
+
+.main_banner .leftside_banner h2.hide_head {
+  display: none;
+}
+
+.main_banner .leftside_banner .head_border {
+  background-color: #E26A2C;
+  width: 108px;
+  height: 8px;
+  margin-top: 3rem;
+}
+
+.main_banner .rightside_banner {
+  padding: 16px 0;
+}
+
+.main_banner .rightside_banner img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 100% 30%;
+     object-position: 100% 30%;
+  height: 320px;
+}
+
+@use "../../../Style/Common/mixin";
+@use "../../../Style/Common/variables";
+@media (min-width: 0px) and (max-width: 767px) {
+  .mobilefilter_menu {
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    display: block !important;
+  }
+  .homebanner {
+    min-height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    position: relative;
+  }
+  .homebanner .homebanner_content {
+    position: absolute;
+    text-align: center;
+    padding: 0 16px 7rem 16px;
+    background: transparent linear-gradient(181deg, rgba(242, 242, 242, 0), #FFFFFF) 0 0 no-repeat padding-box;
+    bottom: 0;
+  }
+  .homebanner .homebanner_content h1 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 45px;
+    font-family: Source Serif Pro;
+    color: #1B252C;
+    max-width: 100%;
+  }
+  .homebanner .homebanner_content p {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+    font-family: Muli;
+    color: #1B252C;
+    max-width: 100%;
+  }
+  .homebanner .homebanner_content .dots_action {
+    display: block;
+  }
+  .homebanner .homebanner_image {
+    min-height: 100vh;
+    float: none;
+    width: 100%;
+    background-size: 120% 100%;
+  }
+  .homebanner .homebanner_image figure img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .category_teaser {
+    margin-top: -10%;
+    background-color: #FFFFFF;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .category_teaser .category_card {
+    height: 280px;
+  }
+  .category_teaser .category_card:not(:first-child) {
+    padding-top: 25px;
+  }
+  .teaserbanner_one {
+    min-height: 60vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    padding-bottom: 0;
+  }
+  .teaserbanner_one .teaserbanner_content {
+    padding: 0;
+    text-align: center;
+  }
+  .teaserbanner_one .teaserbanner_content h1 {
+    padding: 16px 0 8px 0;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 45px;
+    font-family: Source Serif Pro;
+  }
+  .teaserbanner_one .teaserbanner_content p {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+    font-family: Muli;
+  }
+  .teaserbanner_one .teaserbanner_content .action {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .teaserbanner_one .teaserbanner_content .shop_collection {
+    margin-bottom: 24px;
+  }
+  .teaserbanner_one .teaserbanner_content .border_box {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    padding: 40px 0;
+  }
+  .teaserbanner_one .teaserbanner_image {
+    min-height: 50vh;
+    float: none;
+    width: 100%;
+    background-size: 100% 145%;
+  }
+  header .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .logo .mobile_menu {
+    display: block;
+  }
+  header .logo .navbar-brand {
+    padding-left: 65px;
+  }
+  header .right_nav ul .texthide {
+    display: none !important;
+  }
+  header .mobileSidebar_menu {
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    display: block;
+  }
+  .main_banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 0;
+  }
+  .main_banner .leftside_banner {
+    margin: 0 7%;
+    margin-top: -20%;
+    width: 85% !important;
+    height: 10rem !important;
+  }
+  .main_banner .leftside_banner h1 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 42px;
+    font-family: Source Serif Pro;
+  }
+  .main_banner .leftside_banner h2.hide_head {
+    display: block;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 42px;
+    font-family: Source Serif Pro;
+  }
+  .main_banner .leftside_banner .head_border {
+    width: 102px;
+    margin-top: 1rem;
+  }
+  .main_banner .rightside_banner {
+    padding: 0;
+  }
+  .main_banner .rightside_banner img {
+    height: 12rem !important;
+  }
+  .card-container .card {
+    height: 18rem;
+    padding: 0 11px 16px 0;
+  }
+  .card-container .card:nth-child(even) {
+    padding-right: 0 !important;
+    padding-left: 11px !important;
+  }
+  .card-container .card figure {
+    margin: auto;
+  }
+  .card-container .card figure img {
+    max-width: 100%;
+    height: 10rem !important;
+  }
+  .card-container .card .product-details .product-title {
+    max-width: 100%;
+    color: #1B252C;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    font-family: Muli;
+  }
+  .card-container .card .product-details .product-price {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    font-family: Muli;
+    color: #1B252C;
+  }
+  footer .footer-top {
+    padding: 60px 0 80px 0;
+  }
+  footer .footer-top .submenu__heading {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    font-family: Muli;
+    color: #1B252C;
+    padding-bottom: 16px;
+    margin-top: 32px !important;
+  }
+  footer .footer-top a, footer .footer-top p {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+    font-family: Muli;
+    color: #545D63;
+    padding-bottom: 8px;
+  }
+  footer .footer-top p {
+    max-width: 100%;
+  }
+  footer .footer-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    padding: 32px 0 42px 0;
+  }
+  footer .footer-bottom .copyright {
+    padding: 25px 0 38px 0;
+  }
+  footer .footer-bottom .left-nav {
+    padding-top: 34px;
+  }
+  footer .footer-bottom .left-nav ul {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 20%;
+  }
+  .product_image .category_left {
+    display: block;
+    padding: 24px 0;
+  }
+  .product_image .category_left a {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+    font-family: Muli;
+    color: #1B252C;
+  }
+  .product_image .main_image figure img {
+    height: 410px;
+    padding: 0 1em;
+  }
+  .product_image .main_image .single_image {
+    display: none;
+  }
+  .product_image .main_image .prodGallary_images {
+    display: block;
+  }
+  .product_details {
+    padding-left: 0;
+  }
+  .product_details .action {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .product_details .category {
+    display: none;
+  }
+  .product_details h1 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    font-family: Source Serif Pro;
+    padding-top: 20px;
+  }
+  .product_details h4 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    font-family: Muli;
+    padding-top: 8px 0 17px 0;
+  }
+  .product_details .addtocart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .product_details .product_response {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .prod_Description .mainprod_head {
+    text-align: center;
+  }
+  .prod_Description h5 {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 25px;
+    font-family: Muli;
+  }
+  .prod_Description .right_details {
+    padding-top: 16px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .prod_Description .right_details p {
+    max-width: 100%;
+  }
+  .prod_Description .right_details h5 {
+    text-align: center;
+  }
+  .prod_Description .right_details .border {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .prod_Description .left_details {
+    padding: 24px 0 40px 0;
+  }
+  .prod_Description .left_details h5 {
+    text-align: center;
+  }
+  .prod_Description .left_details button {
+    display: block;
+    margin: 24px 35%;
+  }
+  .cart {
+    padding-top: 0 !important;
+  }
+  .cart .cartLeft {
+    padding-right: 0 !important;
+  }
+  .cart .cart_heading {
+    padding: 27px 0 32px 0 !important;
+    text-align: center;
+  }
+  .cart .cart_heading h1 {
+    font-size: 36px !important;
+    font-weight: 600 !important;
+    line-height: 45px !important;
+    font-family: Source Serif Pro !important;
+    max-width: 100%;
+  }
+  .cart .single_cartItem {
+    padding-right: 0;
+    margin-bottom: 33px;
+  }
+  .cart .single_cartItem .singlecart_left figure img {
+    height: 9rem;
+  }
+  .cart .single_cartItem .singlecart_right .center {
+    padding: 0;
+  }
+  .cart .single_cartItem .singlecart_right .center input {
+    width: 80px;
+  }
+  .cart .single_cartItem .singleCart_action .desktophide_action {
+    display: block;
+  }
+  .cart .single_cartItem .singleCart_action .phonehide_action {
+    display: none;
+  }
+  .cart .accordion_box .accordion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cart .accordion_box .accordion .accordion_right {
+    text-align: left;
+  }
+  .cart .product_summary {
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 24px 16px 40px 0;
+  }
+  .mobileview_filterheader {
+    display: block;
+  }
+  .checkout .checkout_heading {
+    padding: 19px 0 32px 0 !important;
+    text-align: center;
+  }
+  .checkout .checkout_heading h1 {
+    padding-bottom: 10px;
+    font-size: 36px !important;
+    font-weight: 600;
+    line-height: 45px;
+    font-family: Source Serif Pro;
+  }
+  .checkout .estimating {
+    margin-bottom: 0 !important;
+  }
+  .checkout .checkout_form {
+    padding-right: 0 !important;
+  }
+  .checkout .checkout_form h2 {
+    font-size: 24px !important;
+    font-weight: 600;
+    line-height: 30px;
+    font-family: Source Serif Pro;
+  }
+  .checkout .product_summary {
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 32px 0 !important;
+  }
+  .checkout .contact_info .leftInputBox {
+    padding-right: 0;
+  }
+  .checkout .contact_info .rightInputBox {
+    padding-left: 0;
+  }
+  .checkout .shipping_info .shipping_information .leftInputBox {
+    padding-right: 0;
+  }
+  .checkout .shipping_info .shipping_information .rightInputBox {
+    padding-left: 0;
+  }
+  .checkout .shipping_info .shipping_information .action {
+    padding: 0 0 48px 0;
+  }
+  .checkout .shipping_info .shipping_information .action .shipping_button .btn_mobiletext {
+    display: block;
+  }
+  .checkout .shipping_info .shipping_information .action .shipping_button .btn_fulltext {
+    display: none;
+  }
+  .checkout .shipMethod_info .action {
+    padding: 0 0 48px 0;
+  }
+  .checkout .shipMethod_info .action .shipping_button .btn_mobiletext {
+    display: block;
+  }
+  .checkout .shipMethod_info .action .shipping_button .btn_fulltext {
+    display: none;
+  }
+  .checkout .payment_info .action {
+    padding: 32px 0 32px 0;
+    border-bottom: 1px solid #D1D3D6;
+  }
+  .checkout .payment_info .action .shipping_button .btn_mobiletext {
+    display: block;
+  }
+  .checkout .payment_info .action .shipping_button .btn_fulltext {
+    display: none;
+  }
+  .checkout .review_order .action p {
+    text-align: center;
+  }
+  .order_summary h1 {
+    padding-bottom: 10px;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 45px;
+    font-family: Source Serif Pro;
+  }
+  .right_details .shipMethod_details {
+    padding-top: 32px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .mobilefilter_menu {
+    display: block !important;
+  }
+  header .right_nav ul .texthide {
+    display: none !important;
+  }
+  header .mobileSidebar_menu {
+    display: block;
+  }
+  .homebanner .homebanner_content {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  .main_banner .leftside_banner {
+    height: 270px;
+  }
+  .main_banner .rightside_banner img {
+    height: 230px;
+  }
+  .category_card {
+    height: 280px;
+  }
+  .teaserbanner_one .teaserbanner_content {
+    padding: 40px 0 56px 0;
+  }
+  .teaserbanner_one .teaserbanner_image {
+    background-size: 110% 120%;
+  }
+  .card-container .card {
+    padding: 0 11px 16px 0;
+  }
+  .card-container .card:nth-child(even) {
+    padding-right: 0 !important;
+    padding-left: 11px !important;
+  }
+  .card-container .card figure img {
+    max-width: 100%;
+    height: 13rem !important;
+    -o-object-fit: fill;
+       object-fit: fill;
+    padding: 0.5em 2em;
+  }
+  .card-container .card .product-details .product-title {
+    max-width: 100%;
+    color: #1B252C;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    font-family: Muli;
+  }
+  .card-container .card .product-details .product-price {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    font-family: Muli;
+    color: #1B252C;
+  }
+  .prod_Description {
+    padding-bottom: 20px;
+  }
+  .prod_Description .mainprod_head {
+    text-align: center;
+  }
+  .prod_Description h5 {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 25px;
+    font-family: Muli;
+  }
+  .prod_Description .right_details {
+    padding-top: 16px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .prod_Description .right_details p {
+    max-width: 100%;
+  }
+  .prod_Description .right_details h5 {
+    text-align: center;
+  }
+  .prod_Description .right_details .border {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .prod_Description .left_details {
+    padding: 24px 0 40px 0;
+  }
+  .prod_Description .left_details h5 {
+    text-align: center;
+  }
+  .prod_Description .left_details button {
+    display: block;
+    margin: 24px 45% 0 45%;
+  }
+  footer .footer-top {
+    padding: 60px 0 80px 0;
+  }
+  footer .footer-top .submenu__heading {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    font-family: Muli;
+    color: #1B252C;
+    padding-bottom: 16px;
+    margin-top: 32px !important;
+  }
+  footer .footer-top a, footer .footer-top p {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+    font-family: Muli;
+    color: #545D63;
+    padding-bottom: 8px;
+  }
+  footer .footer-top p {
+    max-width: 100%;
+  }
+  footer .footer-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    padding: 32px 0 42px 0;
+  }
+  footer .footer-bottom .copyright {
+    padding: 25px 0 38px 0;
+  }
+  footer .footer-bottom .left-nav {
+    padding-top: 34px;
+  }
+  footer .footer-bottom .left-nav ul {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 20%;
+  }
+  .single_cartItem {
+    padding-right: 0;
+    margin-bottom: 33px;
+  }
+  .filter_aside .filter_container .checkbox input {
+    width: 18px;
+    height: 18px;
+  }
+  .cartLeft {
+    padding-right: 0;
+  }
+  .cart .product_summary {
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 24px 32px 40px 16px;
+  }
+  .cart .product_summary .paypal_btn {
+    width: 37%;
+    margin: 0 auto;
+    margin-top: 24px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .card-container .card {
+    padding: 0 21px 16px 0;
+  }
+  .card-container .card:nth-child(even) {
+    padding-right: 0 !important;
+    padding-left: 21px !important;
+  }
+  .card-container .card figure img {
+    max-width: 100%;
+    height: 15rem !important;
+    -o-object-fit: fill;
+       object-fit: fill;
+    padding: 0.5em 2em;
+  }
+  .product_summary {
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 24px 32px 40px 0;
+  }
+  .teaserbanner_one .teaserbanner_content {
+    padding-left: 0;
+  }
+}
+
+@use "../common/mixin";
+@use "../common/variables";
+.single_cartItem {
+  padding-right: 100px;
+  margin-bottom: 33px;
+}
+
+.single_cartItem .singlecart_left figure img {
+  height: 12rem;
+}
+
+.single_cartItem .singlecart_middle strong {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  font-family: Muli;
+  color: #1B252C;
+}
+
+.single_cartItem .singlecart_middle p {
+  padding-top: 8px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  font-family: Muli;
+  color: #1B252C;
+}
+
+.single_cartItem .singlecart_right .center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25% 0;
+}
+
+.single_cartItem .singlecart_right .center button {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 2px solid #B5B7BC;
+  color: #B5B7BC;
+}
+
+.single_cartItem .singlecart_right .center button:disabled {
+  background: #dddddd;
+}
+
+.single_cartItem .singlecart_right .center input {
+  width: 88px;
+  height: 40px;
+  border: 2px solid #B5B7BC;
+  background: #FFFFFF;
+  border-radius: 8px;
+  text-align: center;
+  margin: 0 8px;
+}
+
+.single_cartItem .singleCart_action {
+  padding-top: 34px;
+  position: relative;
+}
+
+.single_cartItem .singleCart_action button {
+  background: none;
+  color: #1B252C;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14px;
+  font-family: Muli;
+  border: none;
+}
+
+.single_cartItem .singleCart_action a {
+  color: #1B252C;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14px;
+  font-family: Muli;
+}
+
+.single_cartItem .singleCart_action img {
+  vertical-align: middle;
+  width: 14px;
+  height: 17px;
+  margin-right: 8px;
+}
+
+.single_cartItem .singleCart_action .desktophide_action {
+  display: none;
+  font-size: 32px;
+  color: #B5B7BC;
+  position: absolute;
+  top: -10px;
+  left: 0;
+}
+
+.single_cartItem .singleCart_action .phonehide_action {
+  display: block;
+}
+
+@use "../common/mixin";
+@use "../common/variables";
+.accordion_box {
+  border: 1px solid #D1D3D6;
+  border-radius: 2px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 24px;
+}
+
+.accordion_box .accordion .accordion_left {
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 25px;
+  font-family: Muli;
+  color: #1B252C;
+}
+
+.accordion_box .accordion .accordion_right {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+  font-family: Muli;
+  color: #1B252C;
+  text-align: right;
+}
+
+.accordion_box .down_arrow {
+  padding-left: 16px;
+}
+
+.accordion_box .down_arrow img {
+  width: 14px;
+  height: 7px;
+  vertical-align: middle;
+}
+
+@use "../common/mixin";
+@use "../common/variables";
+.cart {
+  padding: 33px 0 40px 0;
+}
+
+.cart .cart_heading {
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.cart .cart_heading button {
+  background-color: #E26A2C;
+  width: 102px;
+  height: 8px;
+  border: none;
+}
+
+.cart .cart_heading h1 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 45px;
+  font-family: Source Serif Pro;
+  color: #1B252C;
+  padding-bottom: 10px;
+}
+
+.cart .cartLeft {
+  padding-right: 32px;
+}
+
+.cart .receviewed_Prod {
+  padding-top: 64px;
+}
+
+.cart .receviewed_Prod .cart_heading {
+  padding-bottom: 33px;
+}
+
+.cart .receviewed_Prod .slider {
+  padding-bottom: 128px;
+}
+
+.cart .empty_card {
+  text-align: center;
+  color: #C9252D;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  font-family: Muli;
+}
+
+.cart .emptyCard_message {
+  padding-top: 16px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  font-family: Muli;
+}
+
+.cart .center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 16px;
+}
+
+@use "../common/mixin";
+@use "../common/variables";
+.product_summary {
+  padding: 32px 24px 40px 32px;
+  -webkit-box-shadow: 0px 0px 8px #0000000D;
+          box-shadow: 0px 0px 8px #0000000D;
+  border: 1px solid #D1D3D6;
+  border-radius: 2px;
+}
+
+.product_summary h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  font-family: Muli;
+  color: #1B252C;
+}
+
+.product_summary .product_calculation {
+  padding: 24px 0 40px 0;
+}
+
+.product_summary .product_calculation .calculation_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  font-family: Muli;
+  color: #1B252C;
+}
+
+.product_summary .product_calculation .calculation_row:not(:last-child) {
+  padding-bottom: 16px;
+}
+
+.product_summary .calc_btn {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.product_summary .calc_btn img {
+  width: 20px;
+  height: 13px;
+  padding-right: 4px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.product_summary .paypal_btn {
+  width: 77%;
+  margin: 0 auto;
+  margin-top: 24px;
+}
+
+.product_summary .paypal_btn img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.checkout .checkout_heading {
+  padding: 33px 0 40px 0;
+  text-align: center;
+}
+
+.checkout .checkout_heading h1 {
+  padding-bottom: 10px;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 45px;
+  font-family: Source Serif Pro;
+}
+
+.checkout .border_link {
+  background-color: #E26A2C;
+  width: 102px;
+  height: 8px;
+  border: none;
+}
+
+.checkout .calc_btn {
+  display: none;
+}
+
+.checkout .paypal_btn {
+  display: none;
+}
+
+.checkout .checkout_form {
+  padding-right: 32px;
+}
+
+.checkout .checkout_form h2 {
+  padding-bottom: 20px;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 30px;
+  font-family: Source Serif Pro;
+  color: #172026;
+}
+
+.checkout .product_summary {
+  padding: 32px 24px 0 32px;
+}
+
+.checkout .estimating {
+  margin-bottom: 128px;
+}
+
+.checkout .estimating .section1, .checkout .estimating .section2 {
+  border-top: 1px solid #D1D3D6;
+  padding: 24px 0 24px 0;
+  color: #666666;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  font-family: Muli;
+}
+
+.checkout .estimating .section2, .checkout .estimating .topbottom-border {
+  border-bottom: 1px solid #D1D3D6;
+  padding: 20px 20px 20px 0;
+}
+
+.order_summary .ordersum_heading {
+  padding: 33px 0 40px 0;
+  text-align: center;
+}
+
+.order_summary .ordersum_heading h1 {
+  padding-bottom: 10px;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 45px;
+  font-family: Source Serif Pro;
+}
+
+.order_summary .border_link {
+  background-color: #E26A2C;
+  width: 102px;
+  height: 8px;
+  border: none;
+}
+
+.order_summary .order_details {
+  padding-bottom: 32px;
+}
+
+.order_summary .order_details p {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  font-family: Muli;
+}
+
+.order_summary .order_details h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  font-family: Muli;
+  letter-spacing: 0px;
+  color: #172026;
+  padding-bottom: 32px;
+}
+
+.order_summary .order_details h4 {
+  padding-bottom: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  font-family: Muli;
+  letter-spacing: 0px;
+  color: #172026;
+}
+
+.order_summary .order_details .order_para {
+  padding: 16px 0;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  font-family: Muli;
+  letter-spacing: 0px;
+  color: #172026;
+  max-width: 90%;
+}
+
+.order_summary .order_details .left_details .contact_details {
+  color: #535965;
+}
+
+.order_summary .order_details .left_details .address_details {
+  padding-top: 16px;
+}
+
+.order_summary .order_details .right_details .shipMethod_details {
+  color: #535965;
+}
+
+.order_summary .order_details .right_details .paymen_details {
+  padding-top: 32px;
+  color: #535965;
+}
+
+.order_summary .social_card {
+  background: #FF8243 0% 0% no-repeat padding-box;
+  border: 1px solid #D1D3D6;
+  border-radius: 2px;
+  text-align: center;
+  padding: 39px 0;
+}
+
+.order_summary .social_card .follow_link h2 {
+  max-width: 100%;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 45px;
+  font-family: Source Serif Pro;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+}
+
+.order_summary .social_card .social_links {
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.order_summary .social_card .social_links figure img {
+  width: 50px;
+  height: 50px;
+  padding: 7px;
+}
+
+.order_summary .order_container {
+  border: none;
+  padding-left: 0;
+}
+
+.contact_info {
+  padding: 0 0 40px 0;
+}
+
+.contact_info .leftInputBox {
+  padding-right: 16px;
+}
+
+.contact_info .rightInputBox {
+  padding-left: 16px;
+}
+
+.contact_info h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  font-family: Muli;
+  color: #172026;
+}
+
+.contact_info p {
+  padding-top: 8px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 25px;
+  font-family: Muli;
+  color: #172026;
+}
+
+.contact_info form {
+  padding-top: 16px;
+}
+
+.contact_info form label {
+  padding: 16px 0 8px 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  font-family: Muli;
+  color: #181C24;
+}
+
+.contact_info form input {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 19px;
+  font-family: Muli;
+  color: #91959C;
+  width: 100%;
+  padding: 11px 0 13px 12px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 2px solid #B5B7BC;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.signIn_summary {
+  padding: 24px 32px;
+  border: 1px solid #D1D3D6;
+  border-radius: 2px;
+  margin-bottom: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.signIn_summary .signIn_heading {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+
+.signIn_summary .signIn_heading h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  font-family: Muli;
+  color: #172026;
+  max-width: 100%;
+}
+
+.signIn_summary .signIn_action {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+
+.signIn_summary .signIn_action .signIn_button {
+  padding: 11px 30px 11px 33px;
+  text-transform: uppercase;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 2px solid #D4703D;
+  color: #D4703D;
+}
+
+.shipping_info h3 {
+  padding-bottom: 24px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  font-family: Muli;
+  color: #172026;
+}
+
+.shipping_info .shipping_information .leftInputBox {
+  padding-right: 16px;
+}
+
+.shipping_info .shipping_information .rightInputBox {
+  padding-left: 16px;
+}
+
+.shipping_info .shipping_information option, .shipping_info .shipping_information label {
+  padding: 32px 0 8px 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  font-family: Muli;
+  color: #181C24;
+}
+
+.shipping_info .shipping_information select, .shipping_info .shipping_information input {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 19px;
+  font-family: Muli;
+  color: #91959C;
+  width: 100%;
+  padding: 11px 0 13px 12px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 2px solid #B5B7BC;
+  border-radius: 8px;
+  margin-bottom: 32px;
+}
+
+.shipping_info .shipping_information .action {
+  padding: 48px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.shipping_info .shipping_information .action .shipping_button {
+  border: 2px solid #D4703D;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  color: #D4703D;
+}
+
+.shipping_info .shipping_information .action .shipping_button .btn_mobiletext {
+  display: none;
+}
+
+.shipMethod_info form .radio_control {
+  padding-top: 20px;
+}
+
+.shipMethod_info form .radio_control input {
+  accent-color: #E26A2C;
+  border: 2px solid #E26A2C;
+  width: 24px;
+  height: 24px;
+}
+
+.shipMethod_info form .radio_control label {
+  padding-left: 15px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  font-family: Muli;
+  color: #172026;
+}
+
+.shipMethod_info form .action {
+  padding: 48px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.shipMethod_info form .action .shipping_button {
+  border: 2px solid #D4703D;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  color: #D4703D;
+}
+
+.shipMethod_info form .action .shipping_button .btn_mobiletext {
+  display: none;
+}
+
+.shipInfo_details {
+  margin-bottom: 32px;
+  padding: 24px;
+  border: 1px solid #D1D3D6;
+  border-radius: 2px;
+}
+
+.shipInfo_details h4 {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  font-family: Muli;
+  color: #172026;
+}
+
+.shipInfo_details p {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  font-family: Muli;
+  color: #535965;
+}
+
+.shipInfo_details .shipInfo_details_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.shipInfo_details .shipInfo_details_top .edit_button {
+  background-color: transparent;
+  color: #E26A2C;
+  text-transform: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  font-family: Muli;
+}
+
+.shipInfo_details .shipInfo_details_top .edit_button img {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-right: 7px;
+}
+
+.payment_info form label {
+  padding: 32px 0 8px 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  font-family: Muli;
+  color: #181C24;
+}
+
+.payment_info form input {
+  width: 100%;
+  padding: 11px 0 13px 12px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 2px solid #B5B7BC;
+  border-radius: 8px;
+  margin-bottom: 32px;
+}
+
+.payment_info form .date_inputBox {
+  padding-right: 12px;
+}
+
+.payment_info form .cvv_inputBox {
+  padding-left: 12px;
+}
+
+.payment_info form .radio_control {
+  padding-top: 26px;
+}
+
+.payment_info form .radio_control input {
+  accent-color: #E26A2C;
+  border: 2px solid #E26A2C;
+  width: 24px;
+  height: 24px;
+}
+
+.payment_info form .radio_control label {
+  padding-left: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  font-family: Muli;
+  color: #172026;
+}
+
+.payment_info form .checkbox_control input {
+  accent-color: #E26A2C;
+  border: 2px solid #E26A2C;
+  width: 24px;
+  height: 24px;
+}
+
+.payment_info form .checkbox_control label {
+  padding-left: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  font-family: Muli;
+  color: #172026;
+}
+
+.payment_info form .action {
+  padding: 48px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.payment_info form .action .shipping_button {
+  border: 2px solid #D4703D;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  color: #D4703D;
+}
+
+.payment_info form .action .shipping_button .btn_mobiletext {
+  display: none;
+}
+
+.payment_info form .paypal_box {
+  border-top: 1px solid #B5B7BC;
+  border-bottom: 1px solid #B5B7BC;
+}
+
+.payment_info .help_circle img {
+  width: 24px;
+  height: 24px;
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+
+.order_container {
+  margin-bottom: 32px;
+  padding: 24px;
+  border: 1px solid #D1D3D6;
+  border-radius: 2px;
+}
+
+.order_container h4 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  font-family: Muli;
+  color: #172026;
+}
+
+.singleorder_Item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 24px;
+}
+
+.singleorder_Item .orderItem_image {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+
+.singleorder_Item .orderItem_image img {
+  width: 100%;
+  height: 20vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 0.7em;
+}
+
+.singleorder_Item .orderItem_details {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  padding-left: 16px;
+}
+
+.review_order .action {
+  padding: 0 0 24px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.review_order p {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  font-family: Muli;
+}
+
+.review_order p a {
+  text-decoration: underline;
+}
+
+.card-container {
+  padding-top: 24px;
+}
+
+.card-container .loading_content {
+  padding: 24px;
+  text-align: center;
+}
+
+.mobileSidebar_menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 8px 16px #00000026;
+          box-shadow: 0px 8px 16px #00000026;
+  z-index: 100;
+  height: 100%;
+  overflow-y: auto;
+  display: none;
+  -webkit-animation: moveToRight 0.5s ease-in-out;
+          animation: moveToRight 0.5s ease-in-out;
+}
+
+@-webkit-keyframes moveToRight {
+  0% {
+    -webkit-transform: translateX(500px);
+            transform: translateX(500px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes moveToRight {
+  0% {
+    -webkit-transform: translateX(500px);
+            transform: translateX(500px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+.mobileSidebar_menu nav {
+  background-color: #E5E5E7;
+  padding: 11px 24px 13px 24px;
+  position: -webkit-sticky;
+  position: sticky;
+  -webkit-box-shadow: 35px 35px 35px #0000000D;
+          box-shadow: 35px 35px 35px #0000000D;
+  top: 0;
+}
+
+.mobileSidebar_menu nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mobileSidebar_menu nav ul li {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  font-family: Muli;
+  color: #1D1D1B;
+  letter-spacing: 0.32px;
+}
+
+.mobileSidebar_menu .navlink {
+  padding: 16px 0 16px 24px;
+  border-bottom: 2px solid #E5E5E7;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  font-family: Muli;
+  color: #172026;
+}
+
+.mobileSidebar_menu .navlink:hover {
+  background-color: #ddd5d5;
+  color: white;
+  -webkit-box-shadow: 35px 35px 35px #0000000D;
+          box-shadow: 35px 35px 35px #0000000D;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.mobileSidebar_menu .Mobile_contactfooter {
+  margin-top: 20rem;
+  -webkit-box-shadow: 35px 35px 35px #0000000D;
+          box-shadow: 35px 35px 35px #0000000D;
+  padding: 16px 24px 16px 24px;
+  border-top: 2px solid #E5E5E7;
+  border-bottom: 2px solid #E5E5E7;
+  position: absolute;
+  width: 100vw;
+  bottom: 0;
+}
+
+.mobileSidebar_menu .Mobile_contactfooter ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mobileSidebar_menu .Mobile_contactfooter ul li {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  font-family: Muli;
+  color: #172026;
+}
+
+.mobileSidebar_menu .Mobile_contactfooter ul li:last-child {
+  text-decoration: underline;
+}
+
+.mobilefilter_menu {
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  bottom: 0;
+  left: 10%;
+  right: 0;
+  background-color: #FFFFFF;
+  height: 200vh;
+  -webkit-animation: moveToRight .5s ease-in-out;
+          animation: moveToRight .5s ease-in-out;
+  display: none;
+}
+
+@keyframes moveToRight {
+  0% {
+    -webkit-transform: translateX(500px);
+            transform: translateX(500px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+.mobilefilter_menu h6 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  font-family: Muli;
+  color: #181C24;
+}
+
+.mobilefilter_menu nav {
+  background-color: #E5E5E7;
+  padding: 11px 24px 13px 24px;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.mobilefilter_menu nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mobilefilter_menu nav ul li {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  font-family: Muli;
+  color: #1D1D1B;
+  letter-spacing: 0.32px;
+}
+
+.mobilefilter_menu .attribute {
+  padding: 16px 0 32px 24px;
+  border-bottom: 2px solid #E5E5E7;
+}
+
+.mobilefilter_menu .attribute a {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  font-family: Muli;
+  color: #181C24;
+  text-decoration: underline;
+}
+
+.mobilefilter_menu .attribute .checkbox {
+  padding-top: 16px;
+}
+
+.mobilefilter_menu .attribute .checkbox input {
+  accent-color: #E26A2C;
+  border: 2px solid #E26A2C;
+  width: 24px;
+  height: 24px;
+}
+
+.mobilefilter_menu .attribute .checkbox label {
+  margin-left: 16px;
+  font-family: Muli;
+}
+
+.mobilefilter_menu .action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 32px;
+}
+
+@font-face {
+  font-family: Muli;
+  src: url(../font/Muli-Regular.ttf);
+}
+/*# sourceMappingURL=index.css.map */

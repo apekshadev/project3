@@ -1,0 +1,78 @@
+@use "../common/mixin";
+@use "../common/variables";
+
+footer{
+
+
+.footer-top{
+    padding: 44px 0;
+
+
+        .submenu__heading{
+ 
+            @include mainFont($font-size-16, $line-spacing-24, $font-family-muli, $font-weight-600);
+            color: $color-172026;
+            padding-bottom: $font-size-16;
+        }
+        a,p{
+         
+            @include mainFont($font-size-16, $line-spacing-24, $font-family-muli, $font-style-normal);
+              color: $grey-dark;
+              padding-bottom:8px;
+        }
+        p{
+            max-width: 100%;
+        }
+        .social_link{
+            display: flex;
+
+            img{
+          
+                font-size: 25px;
+                width: 20px;
+                height: 20px;
+                margin-right: 26px;
+            }
+          
+        }
+        
+        
+    }
+    .footer-bottom{
+    
+        padding: 24px 0;
+      
+    figure{ 
+       
+            img{ 
+                    width:6rem;
+                    object-fit:cover;
+                     height: 24px;
+            }
+        }
+    .copyright{
+            text-align: center;
+            @include mainFont($font-size-14, $line-spacing-17-5, $font-family-muli, $font-style-normal);
+            color: $grey-dark;
+            
+        }
+    .left-nav{
+            ul{
+                display: flex;
+                justify-content: space-between;
+            }
+            li a{
+      
+                @include mainFont($font-size-14, $line-spacing-18, $font-family-Proxima, $font-style-normal);
+                line-height: $line-spacing-17-5;
+                color: $color-172026;
+                text-decoration: underline;
+
+            }
+        }
+       
+    }
+   
+}
+   
+    

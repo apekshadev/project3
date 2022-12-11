@@ -1,0 +1,195 @@
+@use  "./variables";
+/* Character Styles */
+// display-xl-48-dekstop-only 
+@mixin dekstop{
+    font-family: $font-family-source-serif-pro;
+    font-style: $font-style-normal;
+    font-weight: $font-weight-600;
+    font-size: $font-size-48;
+    line-height: $line-spacing-60;
+    letter-spacing: $character-spacing-0;
+    color: $color-172026;
+    }
+// display-l-36- 
+@mixin display_l {
+    font-family: $font-family-source-serif-pro;
+    font-style: $font-style-normal;
+    font-weight: $font-weight-600;
+    font-size: $font-size-36;
+    line-height: $line-spacing-45;
+    letter-spacing: $character-spacing-0;
+    color: $color-172026;
+    }
+    // display-m-24- 
+    @mixin display_m{
+    font-family: $font-family-source-serif-pro;
+    font-style: $font-style-normal;
+    font-weight: $font-weight-600;
+    font-size: $font-size-24;
+    line-height: $line-spacing-30;
+    letter-spacing: $character-spacing-0;
+    color: $color-172026;
+    }
+    // display-s-20- 
+    @mixin display_s{
+    font-family: $font-family-source-serif-pro;
+    font-style: $font-style-normal;
+    font-weight: $font-weight-600;
+    font-size: $font-size-20;
+    line-height: $line-spacing-25;
+    letter-spacing: $character-spacing-0;
+    color: $color-172026;
+    }
+    //regular-heading-xl-24- 
+    @mixin heading-xl{
+    font-family: $font-family-muli;
+    font-style: $font-style-normal;
+    font-weight: $font-weight-600;
+    font-size: $font-size-24;
+    line-height: $line-spacing-30;
+    letter-spacing: $character-spacing-0;
+    color: $color-172026;
+    }
+    // regular-heading-l-20- 
+    @mixin heading-l{
+    font-family: $font-family-muli;
+    font-style: $font-style-normal;
+    font-weight: $font-weight-600;
+    font-size: $font-size-20;
+    line-height: $line-spacing-25;
+    letter-spacing: $character-spacing-0;
+    color: $color-172026;
+    }
+    // regular-heading-m-16- 
+    @mixin heading-m{
+    font-family: $font-family-muli;
+    font-style: $font-style-normal;
+    font-weight: $font-weight-600;
+    font-size: $font-size-16;
+    line-height: $line-spacing-20;
+    letter-spacing: $character-spacing-0;
+    color: $color-172026;
+    }
+    // regular-heading-s-14- 
+    @mixin heading-s{
+    font-family: $font-family-muli;
+    font-style: $font-style-normal;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-14;
+    line-height: $line-spacing-17-5;
+    letter-spacing: $character-spacing-0;
+    color: $color-172026;
+    }
+    // regular-body-l-20- 
+    @mixin body-l{
+    font-family: $font-family-muli;
+    font-style: $font-style-normal;
+    font-weight: $font-weight-normal;
+    font-size: $font-size-20;
+    line-height: $line-spacing-30;
+    letter-spacing: $character-spacing-0;
+    color: $color-172026;
+    }
+    // regualr-body-m-16- 
+    @mixin body-m{
+    font-family: $font-family-muli;
+    font-style: $font-style-normal;
+    font-weight: $font-weight-normal;
+    font-size: $font-size-16;
+    line-height: $line-spacing-24;
+    letter-spacing: $character-spacing-0;
+    color: $color-172026;
+    }
+    // regular-body-s-14- 
+    @mixin body-s{
+    font-family: $font-family-muli;
+    font-style: $font-style-normal;
+    font-weight: $font-weight-normal;
+    font-size: $font-size-14;
+    line-height: $line-spacing-21;
+    letter-spacing: $character-spacing-0;
+    color: $color-172026;
+    }
+    @mixin  blockquote{
+    font-family: $font-family-muli;
+    font-style: $font-style-italic;
+    font-weight: $font-weight-normal;
+    font-size: $font-size-20;
+    line-height: $line-spacing-30;
+    letter-spacing: $character-spacing-0;
+    color: $--gray-d2;
+    }
+    @mixin  numbered-list{
+    font-family: $font-family-muli;
+    font-style: $font-style-normal;
+    font-weight: $font-weight-normal;
+    font-size: $font-size-16;
+    line-height: $line-spacing-32;
+    letter-spacing: $character-spacing-0;
+    color: $--gray-d2;
+    }
+
+    @mixin font{
+        font-size: $font-size-16;
+        font-weight:$font-weight-600;
+        line-height:$line-spacing-20; 
+        color: $color-172026;
+        font-family: $font-family-muli;
+      } 
+      @mixin font-two{
+        font-size: $font-size-16;
+        font-weight: $font-style-normal;
+        line-height:$line-spacing-24 ; 
+        color: $color-172026;
+        font-family: $font-family-muli;
+      }
+      @mixin font-three{
+        font-size: $font-size-36;
+        font-weight: $font-weight-600;
+        line-height:$line-spacing-45 ; 
+        color: $color-172026;
+       font-family: $font-family-source-serif-pro;
+
+      }
+      @mixin font-four{
+        font-size: $font-size-20;
+        font-weight: $font-weight-600;
+        line-height:$line-spacing-30 ; 
+        color: $color-172026;
+        font-family: $font-family-muli;
+      }
+      @mixin filterBox {
+        width: 64px;
+        height: 40px;
+        margin-right: 15px;  
+        border-radius: 6px;    
+      }
+      @mixin mainHeading{
+        font-size: $font-size-48;
+        font-weight:$font-weight-600;
+        font-family: $font-family-source-serif-pro;
+       
+      }
+      @mixin font-button{
+        font-size: $font-size-14;
+        font-weight:$font-style-normal;
+        line-height:$line-spacing-16 ; 
+        color:$white;
+       font-family: $font-family-muli;
+
+      }
+      @mixin divider($top, $left, $bottom, $right){
+        border: 4px solid $primary-brand;
+        width: 102px;
+        margin-top: $top;
+        margin-left: $left;
+        margin-bottom: $bottom;
+        margin-right: $right;
+    }
+    @mixin mainFont($fontSize, $lineHeight, $fontFamily, $fontWeight){
+      font-size:$fontSize ;
+      font-weight:$fontWeight ;
+      line-height:$lineHeight ;
+      font-family:$fontFamily ;
+      
+    }

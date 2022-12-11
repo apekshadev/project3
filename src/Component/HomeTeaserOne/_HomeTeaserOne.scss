@@ -1,0 +1,66 @@
+.teaserbanner_one{
+    padding-top: 48px;
+    padding-bottom: 48px;
+    align-items: stretch;
+    display: flex;
+
+    .teaserbanner_content{
+        padding:40px 0 56px 100px;
+        h1{
+           
+            @include mainFont($font-size-48, $line-spacing-60, $font-family-source-serif-pro, $font-weight-600);
+            color: $color-172026;
+            max-width: 100%;
+        }
+        strong{
+           
+            padding-top: 8px;
+            @include mainFont($font-size-20, $line-spacing-25, $font-family-muli, $font-weight-600);
+      
+            color: $color-172026;
+            max-width: 100%;
+        }
+        p{
+           
+            padding: 16px 0 24px 0;
+            @include mainFont($font-size-14, $line-spacing-24, $font-family-muli, $font-style-normal);
+           
+            color: $color-172026;
+            max-width: 100%;
+        }
+        .action{
+            display: flex;  
+            align-items: center;
+            
+             
+        }
+       .shop_collection{
+        padding: 9px 42px;
+        color:$primary-brand;
+        border: 1px solid $primary-brand;
+        background-color:$white;
+        margin-right: 10px;
+     
+    }
+    .border_box{
+        display: flex;
+        justify-content: start;
+        text-align: center;
+        padding-top: 56px;
+        .border{
+            width: 102px;
+            height: 8px;
+            background-color: $primary-brand;
+           
+        }
+    }
+   
+    }
+    .teaserbanner_image{
+     background: url("../../Images/homebanner22.png") no-repeat ;
+      background-size: 100% 150%;
+      min-height: 100%;
+      float: none;
+       
+    }
+}

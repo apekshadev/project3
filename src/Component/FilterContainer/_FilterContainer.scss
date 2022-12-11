@@ -1,0 +1,52 @@
+
+
+.filter_aside{
+    padding-top: 24px;
+    .filter_container{
+        padding-right: 46px;
+            h5{
+                @include mainFont($font-size-20, $line-spacing-14, $font-family-muli, $font-style-normal);
+                color: $gray-d2;
+            }
+            h6{
+                @include mainFont($font-size-16, $line-spacing-24, $font-family-muli, $font-style-normal);
+                padding: 16px 0;
+                color: $gray-d2;
+                font-family: $font-family-muli;
+            }
+            a{
+                @include mainFont($font-size-14, $line-spacing-24, $font-family-muli, $font-style-normal);
+                color: $gray-d2;
+                text-decoration: underline;
+              
+            }
+            .checkbox{  
+                padding-top: 16px;
+                input{
+                    accent-color: $primary-brand;
+                    border: 2px solid $primary-brand;
+                    width: 24px;
+                    height: 24px;
+                  
+                }
+            label{
+                margin-left: 16px;
+                font-family: $font-family-muli;
+            }}
+        .attribute{    
+                padding-bottom: 32px;
+                border-bottom: 2px solid $gray-l1;
+            }
+    
+            
+         }
+}
+  
+
+ 
+
+
+ 
+
+ 
+

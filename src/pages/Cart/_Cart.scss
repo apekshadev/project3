@@ -1,0 +1,51 @@
+@use "../common/mixin";
+@use "../common/variables";
+.cart{
+    padding:  33px 0 40px 0;;
+    .cart_heading{
+        padding-bottom: 40px;
+        text-align: center;
+    button{
+        background-color:$primary-brand;
+        width: 102px;
+        height: 8px;
+        border: none;
+    }
+        h1{
+         
+            @include mainFont($font-size-48, $line-spacing-45, $font-family-source-serif-pro,$font-weight-600);
+            color: $black;
+            padding-bottom: 10px;
+        }
+    }
+    .cartLeft{
+        padding-right: 32px;
+    }
+    .receviewed_Prod{
+        padding-top: 64px;
+        .cart_heading{
+           padding-bottom: 33px;
+        }
+        .slider{
+            padding-bottom: 128px;
+        }
+    }
+    .empty_card{
+        text-align: center;
+        color: $negative-2;
+       
+        @include mainFont($font-size-20, $line-spacing-24, $font-family-muli,$font-weight-600);
+    }
+    .emptyCard_message{
+        padding-top: 16px;
+        text-align: center; 
+        
+        @include mainFont($font-size-20, $line-spacing-24, $font-family-muli,$font-weight-600);
+    }
+    .center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 16px;
+    }
+}

@@ -1,0 +1,54 @@
+.checkout{
+   
+    .checkout_heading{
+        padding: 33px 0 40px 0;
+        text-align: center;
+        h1{
+            padding-bottom: 10px;
+        
+            @include mainFont($font-size-48, $line-spacing-45, $font-family-source-serif-pro,$font-weight-600);
+        }
+    }
+    .border_link{
+        background-color:$primary-brand;
+        width: 102px;
+        height: 8px;
+        border: none;
+    }
+    .calc_btn{
+        display: none;
+    }
+    .paypal_btn{
+        display: none;
+    }
+    .checkout_form{
+        padding-right: 32px;
+        h2{
+            padding-bottom: 20px;
+    
+            @include mainFont($font-size-36, $line-spacing-30, $font-family-source-serif-pro,$font-weight-600);
+            color: $color-172026;
+        }
+    }
+  
+    .product_summary{
+        padding: 32px 24px 0 32px;
+    }
+ 
+    .estimating {
+        margin-bottom: 128px;
+            .section1, .section2 {
+                border-top: 1px solid $border-color;
+                padding: 24px 0 24px 0;
+                color: $grey-m0;
+               
+                @include mainFont($font-size-20, $line-spacing-25, $font-family-muli,$font-weight-600);
+            }
+            .section2, .topbottom-border {
+                border-bottom: 1px solid $border-color;
+                padding: 20px 20px 20px 0;
+            }
+           
+        }
+
+}

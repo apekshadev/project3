@@ -1,0 +1,125 @@
+
+.teaserbanner_footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    color:$white;
+    align-items: center;
+}
+.teaserbanner_secone{
+    width: 62%;
+}
+.teaserbanner_secone > img{
+ width: 100%;
+ height: 350px;
+ object-fit: fill;
+}
+.teaserbanner_sectwo{
+    text-align: center;
+    align-items: center;
+    background-color: $black;
+    width: 38%;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.teaserbanner_sectwo > h2{
+
+    @include mainFont($font-size-40, $line-spacing-62, $font-family-source-serif-pro, $font-weight-600);
+    max-width: 100%;
+    margin-bottom: 16px;
+ 
+}
+.teaserbanner_sectwo > h2 span{
+    display: block;
+}
+.teaserbanner_sectwo > span{
+
+    @include mainFont($font-size-20, $line-spacing-25, $font-family-muli, $font-weight-600);
+    margin-bottom: 16px;
+}
+.teaserbanner_sectwo> .shop_devices{
+                                width: 50%;
+                                border: 2px solid $white;
+                                background-color: transparent;
+                                padding: 11px 10px;
+                                border-radius: 10px;
+                                margin-bottom: 16px;
+                           }
+.teaserbanner_sectwo > img{
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    bottom: 64.5px;
+    left: -27px;
+}
+.teaserbanner_sectwo > hr{
+    @include divider(0px, 0px, 0px, 0px);
+    position: absolute;
+    bottom: 40px;
+    left: -51px;
+}
+
+@media screen and (max-width:328px) {
+    .teaserbanner_sectwo {
+        width: 100%;
+        margin: 0 16px;
+        height: 300px;
+    } 
+    .teaserbanner_secone > img {
+        width: 100%;
+        height: 300px;
+        position: relative;
+        top: 40px;
+    }
+    .teaserbanner_sectwo > img {
+        left: 82.5px;
+        top: -22px;
+        padding-bottom: 5px;
+        border-bottom: 8px solid $primary-d1;
+    }
+    .teaserbanner_sectwo > hr {
+        display: none;
+     }
+     .teaserbanner_sectwo > h2 {
+      
+        text-align: center !important;
+     }
+     .teaserbanner_sectwo > h2 span{
+        display: none;
+    }
+    
+    
+}
+@media screen and (min-width:328px) and (max-width:768px) {
+    .teaserbanner_sectwo {
+        width: 90%;
+        margin: 0 16px;
+        height: 300px;
+    } 
+    .teaserbanner_secone{
+        width: 100%;
+    }
+    .teaserbanner_secone > img {
+        width: 100%;
+        height: 300px;
+        position: relative;
+        top: 40px;
+    }
+    .teaserbanner_sectwo > img {
+        left: 82.5px;
+        top: -22px;
+        padding-bottom: 10px;
+        border-bottom: 8px solid $primary-brand;
+    }
+    .teaserbanner_sectwo > hr {
+       display: none;
+    }
+    .teaserbanner_sectwo > h2 span{
+        display: none;
+    }
+}
+

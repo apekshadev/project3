@@ -1,0 +1,16 @@
+.review_order{
+    .action{
+        padding:0 0 24px 0;
+        display: flex;
+        justify-content: center;
+    
+    }
+    p{
+      
+        @include mainFont($font-size-16, $line-spacing-24, $font-family-muli, $font-style-normal);
+        a{
+            text-decoration: underline;
+        }
+    }
+
+}
